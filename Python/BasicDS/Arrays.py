@@ -8,9 +8,10 @@ class Array:
     data | 66 | 77 | 88 | 99 |    |    |    |  capacity
     """
     # 构造函数
-    def __init__(self, capacity=10):
-        self._data = np.ones(shape=capacity, dtype=int)
+    def __init__(self, capacity=10, dtype="int"):
+        self._data = np.zeros(shape=capacity, dtype=eval(dtype))
         self._size = 0  # 数组实际大小
+        self._dtype = dtype
 
     # 返回数组中元素个数，覆盖len(u)方法，u为该类的对象
     def __len__(self):
@@ -39,8 +40,10 @@ class Array:
     # 在第index个位置插入一个新元素e
     def add(self, index, e):
         # assert 条件为False时执行
-        assert not (self._size == len(self._data)), "Add failed. Array is full."
         assert not (index < 0 or index > self._size), "Add failed. Requre index >= 0 and index <= size."
+
+        if self._size == len(self._data):  # 扩容
+            self.__resize(2 * len(self._data))
 
         for i in range(self._size-1, index-1, -1):  # [self._size-1...index]
             self._data[i+1] = self._data[i]
@@ -80,6 +83,10 @@ class Array:
         for i in range(index+1, self._size):
             self._data[i-1] = self._data[i]
         self._size -= 1
+
+        if self._size == int(len(self._data) / 2):  # 缩容
+            self.__resize(int(len(self._data) / 2))
+
         return ret
 
     # 从数组中删除第一个元素，返回删除的元素
@@ -106,5 +113,13 @@ class Array:
                 res += ", "
         res += "]"
         return res
+
+    # 私有函数
+    def __resize(self, newCapacity):
+        newData = np.zeros(shape=newCapacity, dtype=eval(self._dtype))
+        for i in range(self._size):
+            newData[i] = self._data[i]
+        del(self._data)
+        self._data = newData
 
 
