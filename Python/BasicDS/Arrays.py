@@ -6,6 +6,11 @@ class Array:
     """
                               _size
     data | 66 | 77 | 88 | 99 |    |    |    |  capacity
+    复杂度分析：
+    增：O(n)
+    删：O(n)
+    改：已知索引O(1)，未知索引O(n)
+    查：已知索引O(1)，未知索引O(n)
     """
     # 构造函数
     def __init__(self, capacity=10, dtype="int"):
@@ -84,7 +89,7 @@ class Array:
             self._data[i-1] = self._data[i]
         self._size -= 1
 
-        if self._size == int(len(self._data) / 2):  # 缩容
+        if (self._size == int(len(self._data) / 4)) and (int(len(self._data) / 2) != 0):  # 缩容，Lazy，防止复杂度震荡
             self.__resize(int(len(self._data) / 2))
 
         return ret
