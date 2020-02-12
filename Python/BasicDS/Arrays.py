@@ -61,6 +61,14 @@ class Array:
         assert not (index < 0 or index >= self._size), "Get failed. Index is illegal."
         return self._data[index]
 
+    # 获取第一个元素
+    def getFirst(self):
+        return self.get(self._size - 1)
+
+    # 获取最后一个元素
+    def getLast(self):
+        return self.get(0)
+
     # 修改index索引位置的元素为e
     def set(self, index, e):
         assert not (index < 0 or index >= self._size), "Set failed. Index is illegal."

@@ -16,7 +16,7 @@ if __name__ == "__main__":
     arr.removeFirst()
     print(arr)
     arr.removeFirst()
-    arr.removeFirst()
+    arr.removeLast()
     arr.removeFirst()
     arr.removeFirst()
     print(arr)
