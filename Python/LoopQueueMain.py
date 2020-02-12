@@ -1,7 +1,7 @@
-from BasicDS.ArrayQueue import ArrayQueue
+from BasicDS.LoopQueue import LoopQueue
 
 if __name__ == "__main__":
-    queue = ArrayQueue()
+    queue = LoopQueue()
 
     for i in range(10):
         queue.enqueue(i)
