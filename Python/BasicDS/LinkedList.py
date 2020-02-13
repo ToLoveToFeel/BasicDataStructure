@@ -7,7 +7,13 @@ class LinkedList:
         def __init__(self, element=None, next=None):
             self.e = element
             self.next = next
-
+    """
+    时间复杂度分析：
+    添加操作：addLast(e):O(n)    addFirst(e):O(1)    add(index, e):O(n/2)=O(n)
+    删除操作：removeLast(e):O(n)    removeFirst(e):O(1)    remove(index, e):O(n/2)=O(n)
+    修改操作：set(index, e):O(n)
+    查找操作：get(index):O(n)    contains(e):O(n)
+    """
     def __init__(self):
         self._dummyHead = self.__Node()
         self._size = 0
@@ -46,7 +52,7 @@ class LinkedList:
     # 获得链表的第index(0-based)个位置的元素
     # 在链表中不是一个常用的操作，练习用
     def get(self, index):
-        assert not (index < 0 or index > self._size), "Add failed. Illegal index."
+        assert not (index < 0 or index >= self._size), "Add failed. Illegal index."
 
         cur = self._dummyHead.next
         for i in range(index):
@@ -64,7 +70,7 @@ class LinkedList:
     # 修改链表的第ndex(0-based)个位置的元素为e
     # 在链表中不是一个常用的操作，练习用
     def set(self, index, e):
-        assert not (index < 0 or index > self._size), "Add failed. Illegal index."
+        assert not (index < 0 or index >= self._size), "Add failed. Illegal index."
         cur = self._dummyHead.next
         for i in range(index):
             cur = cur.next
@@ -78,6 +84,31 @@ class LinkedList:
                 return True
             cur = cur.next
         return False
+
+    # 从链表删除index(0-based)位置的元素，返回删除的元素
+    # 在链表中不是一个常用的操作，练习用
+    def remove(self, index):
+        assert not (index < 0 or index >= self._size), "Add failed. Illegal index."
+        prev = self._dummyHead
+        for i in range(index):
+            prev = prev.next
+
+        retNode = prev.next
+        prev.next = retNode.next
+        retNode.next = None
+        self._size -= 1
+
+        retValue = retNode.e
+        del(retNode)
+        return retValue
+
+    # 从链表中删除第一个元素，返回删除的元素
+    def removeFirst(self):
+        return self.remove(0)
+
+    # 从链表中删除最后一个元素，返回删除的元素
+    def removeLast(self):
+        return self.remove(self._size - 1)
 
     def __str__(self):
         res = ""
