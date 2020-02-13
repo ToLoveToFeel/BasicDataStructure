@@ -119,6 +119,14 @@ class LinkedList:
         res += "NULL"
         return res
 
+    def getString(self):
+        res = ""
+        cur = self._dummyHead.next
+        while cur != None:
+            res = res + str(cur.e) + "->"
+            cur = cur.next
+        res += "NULL"
+        return res
 
 
 
