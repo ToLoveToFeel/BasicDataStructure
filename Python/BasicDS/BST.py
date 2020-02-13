@@ -11,10 +11,10 @@ class BST:
             self.right = right
     """
     时间复杂度分析：
-    添加操作：addLast(e):O(n)    addFirst(e):O(1)    add(index, e):O(n/2)=O(n)
-    删除操作：removeLast(e):O(n)    removeFirst(e):O(1)    remove(index, e):O(n/2)=O(n)
-    修改操作：set(index, e):O(n)
-    查找操作：get(index):O(n)    contains(e):O(n)
+    添加操作：
+    删除操作：
+    修改操作：
+    查找操作：
     """
     def __init__(self):
         self.__root = None
