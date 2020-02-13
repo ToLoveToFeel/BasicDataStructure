@@ -3,6 +3,12 @@ from BasicDS.BST import BST
 
 
 class BSTSet:
+    """
+    时间复杂度分析(平均)：n为元素个数
+    增 add：          O(logn)
+    删 remove：       O(logn)
+    查 contains：     O(logn)
+    """
     def __init__(self):
         self.__bst = BST()
 

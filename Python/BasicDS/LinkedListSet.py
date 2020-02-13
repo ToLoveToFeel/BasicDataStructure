@@ -3,6 +3,12 @@ from BasicDS.LinkedList import LinkedList
 
 
 class LinkedListSet:
+    """
+    时间复杂度分析(平均)：n为元素个数
+    增 add：          O(n)
+    删 remove：       O(n)
+    查 contains：     O(n)
+    """
     def __init__(self):
         self.__list = LinkedList()
 
