@@ -166,6 +166,7 @@ class BST:
     def __removeMin(self, node):
         if node.left == None:
             rightNode = node.right
+            # node.right = None
             del node
             self.__size -= 1
             return rightNode
@@ -183,13 +184,57 @@ class BST:
     def __removeMax(self, node):
         if node.right == None:
             leftNode = node.left
+            # node.left = None
             del node
             self.__size -= 1
             return leftNode
         node.right = self.__removeMax(node.right)
         return node
 
+    # 从二分搜索树中删除元素为e的节点
+    def remove(self, e):
+        self.__root = self.__remove(self.__root, e)
+
+    # 从二分搜索树中删除元素为e的节点，递归算法
+    # 返回删除节点后新的二分搜索树的根
+    def __remove(self, node, e):
+        if node == None:
+            return None
+
+        if e < node.e:
+            node.left = self.__remove(node.left, e)
+            return node
+        elif e > node.e:
+            node.right = self.__remove(node.right, e)
+            return node
+        else:  # e == node.e
+            # 待删除节点左子树为空的情况
+            if node.left == None:
+                rightNode = node.right
+                # node.right = None
+                del node
+                self.__size -= 1
+                return rightNode
+            # 待删除节点右子树为空的情况
+            if node.right == None:
+                leftNode = node.left
+                # node.left = None
+                del node
+                self.__size -= 1
+                return leftNode
+            # 待删除节点左右子树均不为为空的情况
+            # 找到比待删除节点大的最小节点, 即待删除节点右子树的最小节点
+            # 用这个节点顶替待删除节点的位置
+            successor = self.__minimum(node.right)  # 获取node右子树最小值
+            successor.right = self.__removeMin(node.right)  # 删除node右子树最小值，同时挂接右子树
+            successor.left = node.left  # 挂接左子树
+            node.left = node.right = None
+            # del node  # 删除node
+
+            return successor
+
     def __str__(self):
+        self.__treeString = ""
         self.__generateBSTString(self.__root, 0)
         return self.__treeString
 

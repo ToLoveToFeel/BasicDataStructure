@@ -14,81 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LinkedListQueueMain.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LinkedListQueueMain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoopQueue.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/LoopQueue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="33" column="14" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BSTMain.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BSTMain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-              <folding>
-                <element signature="e#15#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Arrays.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/Arrays.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2520">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-              <folding>
-                <element signature="e#53#237#1" />
-                <element signature="e#492#509#0" />
-                <element signature="e#558#575#0" />
-                <element signature="e#626#648#0" />
-                <element signature="e#696#718#0" />
-                <element signature="e#773#796#0" />
-                <element signature="e#853#867#0" />
-                <element signature="e#931#1329#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BST.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BST.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BasicDS/BST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4394">
-              <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
-              <folding>
-                <element signature="e#15#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="random.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-606">
-              <caret line="173" column="29" selection-start-line="173" selection-start-column="24" selection-end-line="173" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedList.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/LinkedList.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="20" selection-start-line="20" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="318">
+              <caret line="170" column="17" selection-start-line="170" selection-start-column="17" selection-end-line="170" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -105,11 +35,13 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>stack</find>
+      <find>arr</find>
     </findStrings>
     <replaceStrings>
       <replace>queue</replace>
       <replace>__size</replace>
       <replace>__treeString</replace>
+      <replace>nums</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -136,15 +68,15 @@
         <option value="$PROJECT_DIR$/BasicDS/LinkedList.py" />
         <option value="$PROJECT_DIR$/BasicDS/LinkedListQueue.py" />
         <option value="$PROJECT_DIR$/LinkedListQueueMain.py" />
-        <option value="$PROJECT_DIR$/BasicDS/BST.py" />
         <option value="$PROJECT_DIR$/BSTMain.py" />
+        <option value="$PROJECT_DIR$/BasicDS/BST.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="516" />
-    <option name="y" value="18" />
-    <option name="width" value="1417" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="801" />
+    <option name="y" value="11" />
+    <option name="width" value="1147" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -168,12 +100,6 @@
               <item name="Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
               <item name="BasicDS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="BasicDS" type="462c0819:PsiDirectoryNode" />
-              <item name="BST.py" type="8704e2dd:PyFileNode" />
             </path>
           </expand>
           <select />
@@ -326,13 +252,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="516" y="18" width="1417" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22912206" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21041666" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36072573" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37209302" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -353,7 +279,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -385,9 +311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2640">
           <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="e#15#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -561,16 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BasicDS/BST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4394">
-          <caret line="188" column="18" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
-          <folding>
-            <element signature="e#15#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-606">
@@ -597,11 +510,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BSTMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="228">
+          <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
           <folding>
             <element signature="e#15#42#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/BST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="170" column="17" selection-start-line="170" selection-start-column="17" selection-end-line="170" selection-end-column="17" />
         </state>
       </provider>
     </entry>
