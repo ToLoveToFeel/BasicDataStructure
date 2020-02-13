@@ -133,6 +133,62 @@ class BST:
             if cur.right != None:
                 queue.enqueue(cur.right)
 
+    # 寻找二分搜索树中的最小元素
+    def minimum(self):
+        assert not (self.__size == 0), "BST is empty!"
+        return self.__minimum(self.__root).e
+
+    # 返回以node为根的二分搜索树的最小值所在的节点，递归算法
+    def __minimum(self, node):
+        if node.left == None:
+            return node
+        return self.__minimum(node.left)
+
+    # 寻找二分搜索树中的最大元素
+    def maximum(self):
+        assert not (self.__size == 0), "BST is empty!"
+        return self.__maximum(self.__root).e
+
+    # 返回以node为根的二分搜索树的最大值所在的节点，递归算法
+    def __maximum(self, node):
+        if node.right == None:
+            return node
+        return self.__maximum(node.right)
+
+    # 从二分搜索树中删除最小值所在的节点，返回最小值
+    def removeMin(self):
+        ret = self.minimum()
+        self.__root = self.__removeMin(self.__root)
+        return ret
+
+    # 删除以node为根的二分搜索树中的最小节点
+    # 返回删除节点后新的二分搜索树的根
+    def __removeMin(self, node):
+        if node.left == None:
+            rightNode = node.right
+            del node
+            self.__size -= 1
+            return rightNode
+        node.left = self.__removeMin(node.left)
+        return node
+
+    # 从二分搜索树中删除最大值所在的节点，返回最小值
+    def removeMax(self):
+        ret = self.maximum()
+        self.__root = self.__removeMax(self.__root)
+        return ret
+
+    # 删除以node为根的二分搜索树中的最大节点
+    # 返回删除节点后新的二分搜索树的根
+    def __removeMax(self, node):
+        if node.right == None:
+            leftNode = node.left
+            del node
+            self.__size -= 1
+            return leftNode
+        node.right = self.__removeMax(node.right)
+        return node
+
     def __str__(self):
         self.__generateBSTString(self.__root, 0)
         return self.__treeString
