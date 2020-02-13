@@ -122,6 +122,7 @@ class LinkedList:
             delNode = prev.next
             prev.next = delNode.next
             del delNode
+            self._size -= 1
 
     def __str__(self):
         return self.getString()
