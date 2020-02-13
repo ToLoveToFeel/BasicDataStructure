@@ -14,9 +14,13 @@ if __name__ == "__main__":
     #    2     4      8       #
     ###########################
     # print(bst)
-    bst.preOrder()
-    print()
-    bst.inOrder()
-    print()
-    bst.postOrder()
+    # bst.preOrder()
+    # print()
+    # bst.preOrderNR()
+    # print()
+    # bst.inOrder()
+    # print()
+    # bst.postOrder()
+    bst.levelOrder()
+
 

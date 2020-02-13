@@ -1,4 +1,6 @@
 # coding=utf-8
+from BasicDS.LinkedListStack import LinkedListStack
+from BasicDS.LinkedListQueue import LinkedListQueue
 
 
 class BST:
@@ -74,6 +76,22 @@ class BST:
         self.__preOrder(node.left)
         self.__preOrder(node.right)
 
+    # 二分搜索树的前序遍历的非递归实现
+    def preOrderNR(self):
+        if self.__root == None:
+            return
+
+        stack = LinkedListStack()
+        stack.push(self.__root)
+        while not stack.isEmpty():
+            cur = stack.pop()
+            print(cur.e)
+
+            if cur.right != None:
+                stack.push(cur.right)
+            if cur.left != None:
+                stack.push(cur.left)
+
     # 二分搜索树的中序遍历
     def inOrder(self):
         self.__inOrder(self.__root)
@@ -99,6 +117,21 @@ class BST:
         self.__postOrder(node.left)
         self.__postOrder(node.right)
         print(node.e)
+
+    # 二分搜索树的层序遍历
+    def levelOrder(self):
+        if self.__root == None:
+            return
+
+        queue = LinkedListQueue()
+        queue.enqueue(self.__root)
+        while not queue.isEmpty():
+            cur = queue.dequeue()
+            print(cur.e)
+            if cur.left != None:
+                queue.enqueue(cur.left)
+            if cur.right != None:
+                queue.enqueue(cur.right)
 
     def __str__(self):
         self.__generateBSTString(self.__root, 0)

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4af0155f-720b-4e9c-8737-a3d4662cec38" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/BSTMain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BasicDS/BST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BSTMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/BSTMain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicDS/BST.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicDS/BST.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +18,16 @@
         <entry file="file://$PROJECT_DIR$/LinkedListQueueMain.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoopQueue.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BasicDS/LoopQueue.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="839">
+              <caret line="33" column="14" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -27,8 +35,11 @@
       <file leaf-file-name="BST.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BasicDS/BST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="-2790">
+              <caret line="2" column="51" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="51" />
+              <folding>
+                <element signature="e#15#66#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,8 +47,8 @@
       <file leaf-file-name="BSTMain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BSTMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="149">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -45,7 +56,7 @@
       <file leaf-file-name="LinkedList.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BasicDS/LinkedList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="600">
               <caret line="20" selection-start-line="20" selection-end-line="26" selection-end-column="30" />
             </state>
           </provider>
@@ -126,6 +137,12 @@
               <item name="Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
               <item name="BasicDS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="BasicDS" type="462c0819:PsiDirectoryNode" />
+              <item name="LoopQueue.py" type="8704e2dd:PyFileNode" />
             </path>
           </expand>
           <select />
@@ -284,7 +301,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1671875" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25369978" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35729387" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -309,6 +326,37 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/LinkedListQueueMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BSTMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/LinkedList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" selection-start-line="20" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/BST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#15#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LoopQueueMain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -341,17 +389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-          <folding>
-            <element signature="e#53#237#1" />
-            <element signature="e#307#424#0" />
-            <element signature="e#492#509#0" />
-            <element signature="e#558#575#0" />
-            <element signature="e#626#648#0" />
-            <element signature="e#696#718#0" />
-            <element signature="e#773#796#0" />
-            <element signature="e#853#867#0" />
-            <element signature="e#931#1329#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -400,17 +437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
           <caret line="118" selection-start-line="118" selection-end-line="127" selection-end-column="18" />
-          <folding>
-            <element signature="e#53#237#1" />
-            <element signature="e#307#424#0" />
-            <element signature="e#492#509#0" />
-            <element signature="e#558#575#0" />
-            <element signature="e#626#648#0" />
-            <element signature="e#696#718#0" />
-            <element signature="e#773#796#0" />
-            <element signature="e#853#867#0" />
-            <element signature="e#931#1329#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -418,13 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BasicDS/LoopQueue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -439,18 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
           <caret line="48" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="48" />
-          <folding>
-            <element signature="e#72#220#1" />
-            <element signature="e#279#312#0" />
-            <element signature="e#357#382#0" />
-            <element signature="e#429#454#0" />
-            <element signature="e#496#515#0" />
-            <element signature="e#564#592#0" />
-            <element signature="e#639#664#0" />
-            <element signature="e#701#730#0" />
-            <element signature="e#763#996#0" />
-            <element signature="e#859#954#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,28 +506,38 @@
     <entry file="file://$PROJECT_DIR$/LinkedListQueueMain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BasicDS/LinkedList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="600">
           <caret line="20" selection-start-line="20" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/LoopQueue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="839">
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BSTMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="149">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BasicDS/BST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="-2790">
+          <caret line="2" column="51" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="51" />
+          <folding>
+            <element signature="e#15#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
