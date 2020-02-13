@@ -110,6 +110,19 @@ class LinkedList:
     def removeLast(self):
         return self.remove(self._size - 1)
 
+    # 从链表中删除元素e
+    def removeElement(self, e):
+        prev = self._dummyHead
+        while prev.next != None:
+            if prev.next.e == e:
+                break
+            prev = prev.next
+
+        if prev.next != None:
+            delNode = prev.next
+            prev.next = delNode.next
+            del delNode
+
     def __str__(self):
         return self.getString()
 
