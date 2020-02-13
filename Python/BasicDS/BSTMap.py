@@ -4,19 +4,20 @@ from BasicDS.LinkedListQueue import LinkedListQueue
 
 
 class BSTMap:
+    """
+    时间复杂度分析(平均)：n为元素个数
+    增 add：O(logn)
+    删 remove：O(logn)
+    改 set：O(logn)
+    查 get：O(logn)      contains：O(logn)
+    """
     class __Node:
         def __init__(self, key=None, value=None, left=None, right=None):
             self.key = key
             self.value = value
             self.left = left
             self.right = right
-    """
-    时间复杂度分析：
-    添加操作：
-    删除操作：
-    修改操作：
-    查找操作：
-    """
+
     def __init__(self):
         self.__root = None
         self.__size = 0

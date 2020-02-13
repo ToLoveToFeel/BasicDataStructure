@@ -2,19 +2,19 @@
 
 
 class LinkedListMap:
-
+    """
+    时间复杂度分析(平均)：n为元素个数
+    增 add：O(n)
+    删 remove：O(n)
+    改 set：O(n)
+    查 get：O(n)      contains：O(n)
+    """
     class __Node:
         def __init__(self, key=None, value=None, next=None):
             self.key = key
             self.value = value
             self.next = next
-    """
-    时间复杂度分析：
-    添加操作：addLast(e):O(n)    addFirst(e):O(1)    add(index, e):O(n/2)=O(n)
-    删除操作：removeLast(e):O(n)    removeFirst(e):O(1)    remove(index, e):O(n/2)=O(n)
-    修改操作：set(index, e):O(n)
-    查找操作：get(index):O(n)    contains(e):O(n)
-    """
+
     def __init__(self):
         self.__dummyHead = self.__Node()
         self.__size = 0
