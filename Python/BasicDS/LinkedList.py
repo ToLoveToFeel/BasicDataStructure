@@ -111,13 +111,7 @@ class LinkedList:
         return self.remove(self._size - 1)
 
     def __str__(self):
-        res = ""
-        cur = self._dummyHead.next
-        while cur != None:
-            res = res + str(cur.e) + "->"
-            cur = cur.next
-        res += "NULL"
-        return res
+        return self.getString()
 
     def getString(self):
         res = ""
