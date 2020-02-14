@@ -114,6 +114,13 @@ class Array:
         if index != -1:
             self.remove(index)
 
+    # 交换索引为i和j位置的两个元素
+    def swap(self, i, j):
+        assert not (i < 0 or i >= self.__size or j < 0 or j >= self.__size), "Index is illegal."
+        t = self.__data[i]
+        self.__data[i] = self.__data[j]
+        self.__data[j] = t
+
     # 用户调用print(u)输出的字符串形式，u为该类的对象
     def __str__(self):
         res = "Array: size = {0} , capacity = {1}\n".format(self.__size, len(self.__data))
