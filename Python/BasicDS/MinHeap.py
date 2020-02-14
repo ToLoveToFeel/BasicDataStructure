@@ -2,7 +2,7 @@
 from BasicDS.Array import Array
 
 
-class MaxHeap:
+class MinHeap:
 
     def __init__(self, capacity=10, arr=[]):
         if len(arr) != 0:
@@ -41,23 +41,23 @@ class MaxHeap:
         self.__siftUp(self.__data.getSize() - 1)
 
     def __siftUp(self, k):
-        while k > 0 and self.__data.get(self.__parent(k)) < self.__data.get(k):  # TODO:最小堆更改此处
+        while k > 0 and self.__data.get(self.__parent(k)) > self.__data.get(k):
             self.__data.swap(self.__parent(k), k)
             k = self.__parent(k)
 
-    # 看堆中的最大元素
-    def findMax(self):
+    # 看堆中的最小元素
+    def findMin(self):
         if self.__data.getSize() == 0:
-            raise Exception("Cannot findMax when heap is empty!")
+            raise Exception("Cannot findMin when heap is empty!")
         return self.__data.get(0)
 
     # 方便优先队列调用
     def find(self):
-        return self.findMax()
+        return self.findMin()
 
-    # 取出堆中最大元素
-    def extractMax(self):
-        ret = self.findMax()
+    # 取出堆中最小元素
+    def extractMin(self):
+        ret = self.findMin()
 
         self.__data.swap(0, self.__data.getSize() - 1)
         self.__data.removeLast()
@@ -67,23 +67,23 @@ class MaxHeap:
 
     # 方便优先队列调用
     def extract(self):
-        return self.extractMax()
+        return self.extractMin()
 
     def __siftDown(self, k):
         while self.__leftChild(k) < self.__data.getSize():
             j = self.__leftChild(k)
-            if (j + 1 < self.__data.getSize()) and (self.__data.get(j + 1) > self.__data.get(j)):  # TODO:最小堆更改此处
+            if (j + 1 < self.__data.getSize()) and (self.__data.get(j + 1) < self.__data.get(j)):
                 j = self.__rightChild(k)
-            # self.__data.get(j)是leftChild和rightChild中的最大值
-            if self.__data.get(k) > self.__data.get(j):  # TODO:最小堆更改此处
+            # self.__data.get(j)是leftChild和rightChild中的最小值
+            if self.__data.get(k) < self.__data.get(j):
                 break
 
             self.__data.swap(j, k)
             k = j
 
-    # 取出堆中的最大元素，并且替换成元素e
+    # 取出堆中的最小元素，并且替换成元素e
     def replace(self, e):
-        ret = self.findMax()
+        ret = self.findMin()
         self.__data.set(0, e)
         self.__siftDown(0)
         return ret

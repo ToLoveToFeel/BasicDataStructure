@@ -2,25 +2,26 @@
 import sys
 import random
 import time
-from BasicDS.MaxHeap import MaxHeap
+from BasicDS.MinHeap import MinHeap
 
 def testHeap(testData, isHeapify):
     startTime = time.time()
 
     if isHeapify:
-        maxHeap = MaxHeap(arr=testData)
+        maxHeap = MinHeap(arr=testData)
     else:
-        maxHeap = MaxHeap()
+        maxHeap = MinHeap()
         for num in testData:
             maxHeap.add(num)
 
     arr = []
     for i in range(len(testData)):
-        arr.append(maxHeap.extractMax())
+        arr.append(maxHeap.extractMin())
     for i in range(1, len(testData)):
-        if arr[i - 1] < arr[i]:
+        if arr[i - 1] > arr[i]:
             raise Exception("Error")
-    print("Test MaxHeap completed.")
+    print("Test MinHeap completed.")
+    print(arr[:10])
 
     endTime = time.time()
     return endTime - startTime
