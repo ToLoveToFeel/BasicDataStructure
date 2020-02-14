@@ -12,36 +12,36 @@ class ArrayQueue:
     getFront()：查看队首元素，不出队，O(1)
     """
     def __init__(self, capacity=10):
-        self.arr = Array(capacity)
+        self.__arr = Array(capacity)
 
     # 获取队列大小
     def getSize(self):
-        return self.arr.getSize()
+        return self.__arr.getSize()
 
     # 判断队列是否为空
     def isEmpty(self):
-        return self.arr.isEmpty()
+        return self.__arr.isEmpty()
 
     # 入队
     def enqueue(self, e):
-        self.arr.addLast(e)
+        self.__arr.addLast(e)
 
     # 元素出队，同时返回队首元素
     def dequeue(self):
-        return self.arr.removeFirst()
+        return self.__arr.removeFirst()
 
     # 查看队首元素，不出队
     def getFront(self):
-        return self.arr.getFirst()
+        return self.__arr.getFirst()
 
     def getCapacity(self):
-        return self.arr.getCapacity()
+        return self.__arr.getCapacity()
 
     def __str__(self):
         res = "ArrayQueue: "
         res += "front ["
-        for i in range(self.arr.getSize()):
-            res += str(self.arr.get(i))
+        for i in range(self.__arr.getSize()):
+            res += str(self.__arr.get(i))
             if i != self.getSize() - 1:
                 res += ", "
         res += "] tail"
