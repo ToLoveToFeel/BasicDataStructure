@@ -4,8 +4,14 @@ from BasicDS.Array import Array
 
 class MaxHeap:
 
-    def __init__(self, capacity=10):
-        self.__data = Array(capacity)
+    def __init__(self, capacity=10, arr=[]):
+        if len(arr) != 0:
+            # 传入数组(list)，实现heapify
+            self.__data = Array(arr=arr)
+            for i in range(self.__parent(len(arr) - 1), -1, -1):
+                self.__siftDown(i)
+        else:
+            self.__data = Array(capacity=capacity)
 
     # 返回堆中的元素个数
     def size(self):
@@ -67,7 +73,12 @@ class MaxHeap:
             self.__data.swap(j, k)
             k = j
 
-    
+    # 取出堆中的最大元素，并且替换成元素e
+    def replace(self, e):
+        ret = self.findMax()
+        self.__data.set(0, e)
+        self.__siftDown(0)
+        return ret
 
 
 

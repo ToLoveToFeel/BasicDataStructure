@@ -12,9 +12,13 @@ class Array:
     查：已知索引O(1)，未知索引O(n)
     """
     # 构造函数
-    def __init__(self, capacity=10):
-        self.__data = [0 for _ in range(capacity)]
-        self.__size = 0  # 数组实际大小
+    def __init__(self, capacity=10, arr=[]):
+        if len(arr) != 0:
+            self.__data = arr
+            self.__size = len(arr)  # 数组实际大小
+        else:
+            self.__data = [0 for _ in range(capacity)]
+            self.__size = 0  # 数组实际大小
 
     # 返回数组中元素个数，覆盖len(u)方法，u为该类的对象
     def __len__(self):
