@@ -1,5 +1,4 @@
 # coding=utf-8
-import numpy as np
 
 
 class Array:
@@ -13,10 +12,9 @@ class Array:
     查：已知索引O(1)，未知索引O(n)
     """
     # 构造函数
-    def __init__(self, capacity=10, dtype="int"):
-        self._data = np.zeros(shape=capacity, dtype=eval(dtype))
+    def __init__(self, capacity=10):
+        self._data = [0 for _ in range(capacity)]
         self._size = 0  # 数组实际大小
-        self._dtype = dtype
 
     # 返回数组中元素个数，覆盖len(u)方法，u为该类的对象
     def __len__(self):
@@ -129,7 +127,7 @@ class Array:
 
     # 私有函数
     def __resize(self, newCapacity):
-        newData = np.zeros(shape=newCapacity, dtype=eval(self._dtype))
+        newData = [0 for _ in range(newCapacity)]
         for i in range(self._size):
             newData[i] = self._data[i]
         del(self._data)

@@ -11,8 +11,8 @@ class ArrayQueue:
     dequeue()：元素出队，同时返回队首元素，O(n)
     getFront()：查看队首元素，不出队，O(1)
     """
-    def __init__(self, capacity=10, dtype="int"):
-        self.arr = Array(capacity, dtype)
+    def __init__(self, capacity=10):
+        self.arr = Array(capacity)
 
     # 获取队列大小
     def getSize(self):

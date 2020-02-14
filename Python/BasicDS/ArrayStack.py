@@ -11,8 +11,8 @@ class ArrayStack:
     pop()：元素出栈，同时返回栈顶元素，O(1)
     peek()：查看栈顶元素，不出栈，O(1)
     """
-    def __init__(self, capacity=10, dtype="int"):
-        self.arr = Array(capacity, dtype)
+    def __init__(self, capacity=10):
+        self.arr = Array(capacity)
 
     # 获取栈大小
     def getSize(self):

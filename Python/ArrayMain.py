@@ -3,7 +3,7 @@ from BasicDS.Arrays import Array
 if __name__ == "__main__":
     # arr = Array(20, "int")
     # arr = Array(20, "np.float")
-    arr = Array(dtype="np.float")
+    arr = Array()
     for i in range(9):
         arr.addLast(i)
     print(arr)
@@ -22,6 +22,7 @@ if __name__ == "__main__":
     print(arr)
     arr.removeFirst()
     print(arr)
+
 
 
 
