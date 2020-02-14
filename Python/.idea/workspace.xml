@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4af0155f-720b-4e9c-8737-a3d4662cec38" name="Default" comment="LinkedList 全局变量改为私有变量">
-      <change beforePath="$PROJECT_DIR$/ArrayMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BSTMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/BSTMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicDS/ArrayQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicDS/ArrayQueue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicDS/ArrayStack.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicDS/ArrayStack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicDS/LoopQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicDS/LoopQueue.py" afterDir="false" />
-    </list>
+    <list default="true" id="4af0155f-720b-4e9c-8737-a3d4662cec38" name="Default" comment="LinkedList 全局变量改为私有变量" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
