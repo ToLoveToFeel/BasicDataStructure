@@ -1,7 +1,7 @@
 # coding=utf-8
 from BasicDS.BST import BST
 import random
-from BasicDS.Arrays import Array
+from BasicDS.Array import Array
 
 if __name__ == "__main__":
     bst = BST()

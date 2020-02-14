@@ -1,5 +1,5 @@
 # coding=utf-8
-from BasicDS.Arrays import Array
+from BasicDS.Array import Array
 
 
 class ArrayStack:

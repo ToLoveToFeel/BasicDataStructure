@@ -1,4 +1,4 @@
-from BasicDS.Arrays import Array
+from BasicDS.Array import Array
 
 if __name__ == "__main__":
     # arr = Array(20, "int")
