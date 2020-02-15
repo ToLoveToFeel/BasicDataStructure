@@ -2,7 +2,13 @@
 
 
 class SegmentTree:
-
+    """
+    时间复杂度分析：n为数组大小
+        更新set：O(logn)
+        查询query：O(logn)
+    空间复杂度分析：n为数组大小
+        O(n)
+    """
     def __init__(self, arr, merger=(lambda a, b: a + b)):
         self.__data = arr
         self.__tree = [None for _ in range(len(arr) * 4)]
@@ -64,6 +70,30 @@ class SegmentTree:
         rightResult = self.__query(rightTreeIndex, mid + 1, r, mid + 1, queryR)
 
         return self.__merger(leftResult, rightResult)
+
+    # 将index位置的值，更新为e
+    def set(self, index, e):
+        if index < 0 or index >= len(self.__data):
+            raise Exception("Index is illegal.")
+        self.__data[index] = e
+        self.__set(0, 0, len(self.__data) - 1, index, e)
+
+    # 在以treeIndex为根的线段树中更新index的值为e
+    def __set(self, treeIndex, l, r, index, e):
+        if l == r:
+            self.__tree[treeIndex] = e
+            return
+
+        # treeIndex的节点分为[l...mid]和[mid+1...r]两部分
+        mid = l + int((r - l) / 2)
+        leftTreeIndex = self.__leftChild(treeIndex)
+        rightTreeIndex = self.__rightChild(treeIndex)
+        if index >= mid + 1:
+            self.__set(rightTreeIndex, mid + 1, r, index, e)
+        else:  # index < mid + 1
+            self.__set(leftTreeIndex, l, mid, index, e)
+
+        self.__tree[treeIndex] = self.__merger(self.__tree[leftTreeIndex], self.__tree[rightTreeIndex])
 
     def __str__(self):
         res = "["

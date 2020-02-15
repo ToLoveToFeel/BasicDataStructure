@@ -9,3 +9,6 @@ if __name__ == "__main__":
     print(segTree.query(0, 2))
     print(segTree.query(2, 5))
     print(segTree.query(0, 5))
+    segTree.set(1, 1)
+    print(segTree.query(0, 2))
+

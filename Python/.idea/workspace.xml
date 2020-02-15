@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4af0155f-720b-4e9c-8737-a3d4662cec38" name="Default" comment="LinkedList 全局变量改为私有变量">
-      <change afterPath="$PROJECT_DIR$/BasicDS/SegmentTree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegmentTreeMain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicDS/SegmentTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicDS/SegmentTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SegmentTreeMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/SegmentTreeMain.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +18,8 @@
       <file leaf-file-name="SegmentTree.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BasicDS/SegmentTree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="63" column="69" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="69" />
+            <state relative-caret-position="210">
+              <caret line="82" column="18" lean-forward="true" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -27,20 +27,17 @@
       <file leaf-file-name="SegmentTreeMain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SegmentTreeMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="420">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PriorityQueue.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/PriorityQueue.py">
+      <file leaf-file-name="BST.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BasicDS/BST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="14" />
-              <folding>
-                <element signature="e#15#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1260">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -115,14 +112,15 @@
         <option value="$PROJECT_DIR$/BasicDS/MaxHeap.py" />
         <option value="$PROJECT_DIR$/BasicDS/PriorityQueue.py" />
         <option value="$PROJECT_DIR$/BasicDS/Merger.py" />
-        <option value="$PROJECT_DIR$/SegmentTreeMain.py" />
         <option value="$PROJECT_DIR$/BasicDS/SegmentTree.py" />
+        <option value="$PROJECT_DIR$/SegmentTreeMain.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+    <option name="x" value="871" />
+    <option name="y" value="17" />
+    <option name="width" value="1147" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -317,12 +315,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.153125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15260416" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17653278" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28224102" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -367,18 +364,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BasicDS/SegmentTree.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BasicDS/SegmentTree.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="8" />
     </breakpoint-manager>
   </component>
@@ -643,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BasicDS/BST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BasicDS/Array.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -725,17 +703,24 @@
     <entry file="file://$PROJECT_DIR$/BasicDS/Merger.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/BST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SegmentTreeMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="420">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BasicDS/SegmentTree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="63" column="69" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="69" />
+        <state relative-caret-position="210">
+          <caret line="82" column="18" lean-forward="true" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
         </state>
       </provider>
     </entry>
