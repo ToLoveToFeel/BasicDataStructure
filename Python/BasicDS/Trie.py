@@ -18,9 +18,9 @@ class Trie:
         return self.__size
 
     # 向Trie中添加一个新的单词word
-    def add(self, string):
+    def add(self, word):
         cur = self.__root
-        for c in string:
+        for c in word:
             if cur.next.get(c) == None:  # 当前映射中不包含c
                 cur.next.add(c, self.__Node())
             cur = cur.next.get(c)  # 获取字符c对应的下一个节点
@@ -29,9 +29,9 @@ class Trie:
             self.__size += 1
 
     # 查询单词word是否在Trie中
-    def contains(self, string):
+    def contains(self, word):
         cur = self.__root
-        for c in string:
+        for c in word:
             if cur.next.get(c) == None:
                 return False
             cur = cur.next.get(c)
