@@ -28,7 +28,14 @@ class Trie:
             cur.isWord = True
             self.__size += 1
 
-    
+    # 查询单词word是否在Trie中
+    def contains(self, string):
+        cur = self.__root
+        for c in string:
+            if cur.next.get(c) == None:
+                return False
+            cur = cur.next.get(c)
+        return cur.isWord
 
 
 
