@@ -1,6 +1,4 @@
 # coding=utf-8
-from BasicDS.LinkedListStack import LinkedListStack
-from BasicDS.LinkedListQueue import LinkedListQueue
 
 
 class BSTMap:
