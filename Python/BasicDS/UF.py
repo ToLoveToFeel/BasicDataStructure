@@ -9,7 +9,7 @@ class UF:
     """
     def __init__(self, size):
         self.__parent = [i for i in range(size)]  # 记录指向的父亲节点
-        self.__sz = [1 for _ in range(size)]
+        self.__rank = [1 for _ in range(size)]  # rank[i]表示以i为根的集合所表示的树的层数
 
     # 获取并查集元素个数
     def getSize(self):
@@ -35,11 +35,14 @@ class UF:
         if pRoot == qRoot:
             return
 
-        if self.__sz[pRoot] < self.__sz[qRoot]:
+        # 根据两个元素所在树的rank不同判断合并方向
+        # 将rank低的集合并到rank高的集合上
+        if self.__rank[pRoot] < self.__rank[qRoot]:
             self.__parent[pRoot] = qRoot  # 让pRoot指向qRoot
-            self.__sz[qRoot] += self.__sz[pRoot]
-        else:
+        elif self.__rank[pRoot] > self.__rank[qRoot]:
+            self.__parent[qRoot] = pRoot  # 让pRoot指向qRoot
+        else:  # self.__rank[pRoot] == self.__rank[qRoot]
             self.__parent[qRoot] = pRoot
-            self.__sz[pRoot] += self.__sz[qRoot]
+            self.__rank[pRoot] += 1
 
 
