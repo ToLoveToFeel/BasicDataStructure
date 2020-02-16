@@ -20,6 +20,7 @@ class UF:
         if p < 0 or p >= len(self.__parent):
             raise Exception("p is out of bound!")
         while p != self.__parent[p]:
+            self.__parent[p] = self.__parent[self.__parent[p]]  # 路径压缩
             p = self.__parent[p]
         return p
 
