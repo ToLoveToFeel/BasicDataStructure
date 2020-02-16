@@ -9,6 +9,7 @@ class UF:
     """
     def __init__(self, size):
         self.__parent = [i for i in range(size)]  # 记录指向的父亲节点
+        self.__sz = [1 for _ in range(size)]
 
     # 获取并查集元素个数
     def getSize(self):
@@ -34,6 +35,11 @@ class UF:
         if pRoot == qRoot:
             return
 
-        self.__parent[pRoot] = qRoot  # 让pRoot指向qRoot
+        if self.__sz[pRoot] < self.__sz[qRoot]:
+            self.__parent[pRoot] = qRoot  # 让pRoot指向qRoot
+            self.__sz[qRoot] += self.__sz[pRoot]
+        else:
+            self.__parent[qRoot] = pRoot
+            self.__sz[pRoot] += self.__sz[qRoot]
 
 

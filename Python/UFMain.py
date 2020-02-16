@@ -24,10 +24,10 @@ def testUF(uf, m):
 
 if __name__ == "__main__":
     size = 10000
-    m = 1000
+    m = 100000
 
-    uf1 = UFQuickFind(size)
-    print("UFQuickFind : ", testUF(uf1, m), " s")
+    # uf1 = UFQuickFind(size)
+    # print("UFQuickFind : ", testUF(uf1, m), " s")
 
     uf2 = UF(size)
     print("UF : ", testUF(uf2, m), " s")
