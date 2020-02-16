@@ -3,7 +3,9 @@ from BasicDS.BSTMap import BSTMap
 
 
 class Trie:
-
+    """
+    字典树，前缀树
+    """
     class __Node:
         def __init__(self, isWord=False):
             self.isWord = isWord  # 记录走到当前位置是否为单词
@@ -37,6 +39,14 @@ class Trie:
             cur = cur.next.get(c)
         return cur.isWord
 
+    # 查询是否在Trie中有单词以prefix为前缀
+    def isPrefix(self, prefix):
+        cur = self.__root
+        for c in prefix:
+            if cur.next.get(c) == None:
+                return False
+            cur = cur.next.get(c)
+        return True
 
 
 
