@@ -24,6 +24,14 @@ class UF:
             p = self.__parent[p]
         return p
 
+    # # 辅助函数，查找元素p所对应的集合编号，O(h)复杂度，h为树高，压缩为两层
+    # def __find(self, p):
+    #     if p < 0 or p >= len(self.__parent):
+    #         raise Exception("p is out of bound!")
+    #     if p != self.__parent[p]:
+    #         self.__parent[p] = self.__find(self.__parent[p])  # 路径压缩
+    #     return self.__parent[p]
+
     # 判断两个元素是否相连
     def isConnected(self, p, q):
         return self.__find(p) == self.__find(q)
