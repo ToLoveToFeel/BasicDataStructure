@@ -22,11 +22,11 @@ class AVLTree:
         self.__size = 0
         self.__treeString = ""
 
-    # 获取二分搜索树中的元素的个数
+    # 获取平衡二叉树中的元素的个数
     def getSize(self):
         return self.__size
 
-    # 判断二分搜索树是否为空
+    # 判断平衡二叉树是否为空
     def isEmpty(self):
         return self.__size == 0
 
@@ -118,12 +118,12 @@ class AVLTree:
 
         return x
 
-    # 向二分搜索树中添加元素(key, value)
+    # 向平衡二叉树中添加元素(key, value)
     def add(self, key, value):
         self.__root = self.__add(self.__root, key, value)
 
-    # 向以node为根节点的二分搜索树中添加元素(key, value)，递归算法
-    # 返回插入新节点后二分搜索树的根
+    # 向以node为根节点的平衡二叉树中添加元素(key, value)，递归算法
+    # 返回插入新节点后平衡二叉树的根
     def __add(self, node, key, value):
         if node is None:
             self.__size += 1
@@ -165,14 +165,14 @@ class AVLTree:
             return node.value
         return None
 
-    # 返回以node为根的二分搜索树的最小值所在的节点，递归算法
+    # 返回以node为根的平衡二叉树的最小值所在的节点，递归算法
     def __minimum(self, node):
         if node.left is None:
             return node
         return self.__minimum(node.left)
 
-    # 从二分搜索树中删除键为e的节点，递归算法
-    # 返回删除节点后新的二分搜索树的根
+    # 从平衡二叉树中删除键为e的节点，递归算法
+    # 返回删除节点后新的平衡二叉树的根
     def __remove(self, node, key):
         if node is None:
             return None
@@ -249,7 +249,7 @@ class AVLTree:
     def contains(self, key):
         return self.__getNode(self.__root, key) != None
 
-    # 返回以node为根节点的二分搜索树中，key所在的节点
+    # 返回以node为根节点的平衡二叉树中，key所在的节点
     def __getNode(self, node, key):
         if node is None:
             return None
