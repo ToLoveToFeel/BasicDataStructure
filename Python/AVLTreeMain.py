@@ -16,5 +16,7 @@ if __name__ == "__main__":
     print("Total different words: ", map.getSize())
     print("Frequency of PRIDE: ", map.get("pride"))
     print("Frequency of PREJUDICE: ", map.get("prejudice"))
+    print("is BST : ", map.isBST())
+    print("is Balanced : ", map.isBalanced())
 
 

@@ -30,6 +30,36 @@ class AVLTree:
     def isEmpty(self):
         return self.__size == 0
 
+    # 判断该二叉树是否是一棵二分搜索树
+    def isBST(self):
+        keys = []
+        self.__inOrder(self.__root, keys)
+        for i in range(1, len(keys)):
+            if keys[i-1] > keys[i]:
+                return False
+        return True
+
+    def __inOrder(self, node, keys):
+        if node == None:
+            return
+        self.__inOrder(node.left, keys)
+        keys.append(node.key)
+        self.__inOrder(node.right, keys)
+
+    # 判断该二叉树是否是一棵平衡二叉树
+    def isBalanced(self):
+        return self.__isBalanced(self.__root)
+
+    # 判断以node为根的二叉树是否是一棵平衡二叉树，递归算法
+    def __isBalanced(self, node):
+        if node == None:
+            return True
+
+        balanceFactor = self.__getBlanceFactor(node)
+        if abs(balanceFactor) > 1:
+            return False
+        return self.__isBalanced(node.left) and self.__isBalanced(node.right)
+
     # 获取节点node的平衡因子
     def __getBlanceFactor(self, node):
         if node == None:
@@ -41,6 +71,52 @@ class AVLTree:
         if node == None:
             return 0
         return node.height
+
+    # 对节点y进行向右旋转操作(因为只添加一个节点，所以y的平衡因子为2)，返回旋转后新的根节点x
+    #        y                              x
+    #       / \                           /   \
+    #      x   T4     向右旋转 (y)        z     y
+    #     / \       - - - - - - - ->    / \   / \
+    #    z   T3                       T1  T2 T3 T4
+    #   / \
+    # T1   T2
+    def __RightRotate(self, y):
+        # 暂存信息
+        x = y.left
+        T3 = x.right
+
+        # 向右旋转过程
+        x.right = y
+        y.left = T3
+
+        # 更新height
+        y.height = max(self.__getHeight(y.left), self.__getHeight(y.right)) + 1
+        x.height = max(self.__getHeight(x.left), self.__getHeight(x.right)) + 1
+
+        return x
+
+    # 对节点y进行向左旋转操作(因为只添加一个节点，所以y的平衡因子为2)，返回旋转后新的根节点x
+    #    y                             x
+    #  /  \                          /   \
+    # T1   x      向左旋转 (y)       y     z
+    #     / \   - - - - - - - ->   / \   / \
+    #   T2  z                     T1 T2 T3 T4
+    #      / \
+    #     T3 T4
+    def __LeftRotate(self, y):
+        # 暂存信息
+        x = y.right
+        T2 = x.left
+
+        # 向右旋转过程
+        x.left = y
+        y.right = T2
+
+        # 更新height
+        y.height = max(self.__getHeight(y.left), self.__getHeight(y.right)) + 1
+        x.height = max(self.__getHeight(x.left), self.__getHeight(x.right)) + 1
+
+        return x
 
     # 向二分搜索树中添加元素(key, value)
     def add(self, key, value):
@@ -65,8 +141,14 @@ class AVLTree:
 
         # 计算平衡因子
         balanceFactor = self.__getBlanceFactor(node)
-        if abs(balanceFactor) > 1:
-            print("unbalanced : ", balanceFactor)
+        # if abs(balanceFactor) > 1:
+        #     print("unbalanced : ", balanceFactor)
+
+        # 平衡维护
+        if balanceFactor > 1 and self.__getBlanceFactor(node.left) >= 0:
+            return self.__RightRotate(node)
+        if balanceFactor < -1 and self.__getHeight(node.right) <= 0:
+            return self.__LeftRotate(node)
 
         return node
 
