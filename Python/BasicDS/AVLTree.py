@@ -171,55 +171,67 @@ class AVLTree:
             return node
         return self.__minimum(node.left)
 
-    # 删除以node为根的二分搜索树中的最小节点
-    # 返回删除节点后新的二分搜索树的根
-    def __removeMin(self, node):
-        if node.left == None:
-            rightNode = node.right
-            # node.right = None
-            del node
-            self.__size -= 1
-            return rightNode
-        node.left = self.__removeMin(node.left)
-        return node
-
     # 从二分搜索树中删除键为e的节点，递归算法
     # 返回删除节点后新的二分搜索树的根
     def __remove(self, node, key):
         if node == None:
             return None
 
+        retNode = None
         if key < node.key:
             node.left = self.__remove(node.left, key)
-            return node
+            retNode = node
         elif key > node.key:
             node.right = self.__remove(node.right, key)
-            return node
+            retNode = node
         else:  # key == node.key
             # 待删除节点左子树为空的情况
             if node.left == None:
                 rightNode = node.right
-                # node.right = None
                 del node
                 self.__size -= 1
-                return rightNode
+                retNode = rightNode
             # 待删除节点右子树为空的情况
-            if node.right == None:
+            elif node.right == None:
                 leftNode = node.left
-                # node.left = None
                 del node
                 self.__size -= 1
-                return leftNode
-            # 待删除节点左右子树均不为为空的情况
-            # 找到比待删除节点大的最小节点, 即待删除节点右子树的最小节点
-            # 用这个节点顶替待删除节点的位置
-            successor = self.__minimum(node.right)  # 获取node右子树最小值
-            successor.right = self.__removeMin(node.right)  # 删除node右子树最小值，同时挂接右子树
-            successor.left = node.left  # 挂接左子树
-            node.left = node.right = None
-            # del node  # 删除node
+                retNode = leftNode
+            else:  # 待删除节点左右子树均不为为空的情况
+                # 找到比待删除节点大的最小节点, 即待删除节点右子树的最小节点
+                # 用这个节点顶替待删除节点的位置
+                successor = self.__minimum(node.right)  # 获取node右子树最小值
+                successor.right = self.__remove(node.right, successor.key)  # 删除node右子树最小值，同时挂接右子树
+                successor.left = node.left  # 挂接左子树
+                node.left = node.right = None
+                # del node  # 删除node
 
-            return successor
+                retNode = successor
+
+        if retNode == None: # 删除节点后返回空节点直接返回即可，不需要对空节点维护平衡
+            return None
+
+        # 更新height
+        retNode.height = 1 + max(self.__getHeight(retNode.left), self.__getHeight(retNode.right))
+
+        # 计算平衡因子
+        balanceFactor = self.__getBlanceFactor(retNode)
+
+        # 平衡维护
+        # if balanceFactor > 1 and self.__getBlanceFactor(retNode.left) > 0:  # LL，这种写法不行！
+        if balanceFactor > 1 and self.__getBlanceFactor(retNode.left) >= 0:  # LL
+            return self.__RightRotate(retNode)
+        # if balanceFactor < -1 and self.__getBlanceFactor(retNode.right) < 0:  # RR，这种写法不行！
+        if balanceFactor < -1 and self.__getBlanceFactor(retNode.right) <= 0:  # RR
+            return self.__LeftRotate(retNode)
+        if balanceFactor > 1 and self.__getBlanceFactor(retNode.left) < 0:  # LR
+            retNode.left = self.__LeftRotate(retNode.left)
+            return self.__RightRotate(retNode)
+        if balanceFactor < -1 and self.__getBlanceFactor(retNode.right) > 0:  # RL
+            retNode.right = self.__RightRotate(retNode.right)
+            return self.__LeftRotate(retNode)
+
+        return retNode
 
     def set(self, key, value):
         node = self.__getNode(self.__root, key)

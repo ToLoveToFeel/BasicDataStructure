@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4af0155f-720b-4e9c-8737-a3d4662cec38" name="Default" comment="LinkedList 全局变量改为私有变量">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AVLTreeMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/AVLTreeMain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicDS/AVLTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicDS/AVLTree.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +17,8 @@
       <file leaf-file-name="AVLTree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BasicDS/AVLTree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5460">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="272">
+              <caret line="223" column="92" selection-start-line="223" selection-start-column="92" selection-end-line="223" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -26,8 +26,8 @@
       <file leaf-file-name="AVLTreeMain.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AVLTreeMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+            <state relative-caret-position="-588">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#15#25#0" expanded="true" />
               </folding>
@@ -83,6 +83,7 @@
       <find>item</find>
       <find>string</find>
       <find>__id</find>
+      <find>node</find>
     </findStrings>
     <replaceStrings>
       <replace>queue</replace>
@@ -95,6 +96,7 @@
       <replace>set</replace>
       <replace>word</replace>
       <replace>__parent</replace>
+      <replace>retNode</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -148,13 +150,13 @@
         <option value="$PROJECT_DIR$/BasicDS/UF.py" />
         <option value="$PROJECT_DIR$/BasicDS/UFNumpy.py" />
         <option value="$PROJECT_DIR$/UFMain.py" />
-        <option value="$PROJECT_DIR$/BasicDS/AVLTree.py" />
         <option value="$PROJECT_DIR$/BSTMapMain.py" />
+        <option value="$PROJECT_DIR$/BasicDS/AVLTree.py" />
         <option value="$PROJECT_DIR$/AVLTreeMain.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -350,15 +352,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16145833" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27409372" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32241014" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32230523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -727,13 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BasicDS/AVLTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5460">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/851012445/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -741,10 +736,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/AVLTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="223" column="92" selection-start-line="223" selection-start-column="92" selection-end-line="223" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AVLTreeMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        <state relative-caret-position="-588">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#15#25#0" expanded="true" />
           </folding>
