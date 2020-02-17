@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4af0155f-720b-4e9c-8737-a3d4662cec38" name="Default" comment="LinkedList 全局变量改为私有变量">
-      <change beforePath="$PROJECT_DIR$/BasicDS/AVLTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicDS/AVLTree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicDS/AVLTreeMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicDS/AVLTreeMap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BasicDS/HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicDS/HashTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashTableMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/HashTableMain.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,16 +13,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HashTable.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HashTable.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BasicDS/HashTable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="207">
+              <caret line="55" column="95" selection-start-line="55" selection-start-column="95" selection-end-line="55" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashTableMain.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HashTableMain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HashTableMain.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
@@ -168,8 +165,8 @@
         <option value="$PROJECT_DIR$/ArrayMain.py" />
         <option value="$PROJECT_DIR$/BasicDS/AVLTree.py" />
         <option value="$PROJECT_DIR$/BasicDS/AVLTreeMap.py" />
-        <option value="$PROJECT_DIR$/BasicDS/HashTable.py" />
         <option value="$PROJECT_DIR$/HashTableMain.py" />
+        <option value="$PROJECT_DIR$/BasicDS/HashTable.py" />
       </list>
     </option>
   </component>
@@ -388,7 +385,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2769556" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2769556" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -429,13 +426,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/BasicDS/HashTable.py</url>
-          <line>78</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager>
@@ -443,6 +433,15 @@
         <watch expression="map.keySet()" language="Python" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>map.keySet()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BasicDS/UFNumpy.py" />
@@ -867,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BasicDS/HashTable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HashTableMain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -881,6 +873,13 @@
           <folding>
             <element signature="e#15#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/HashTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="55" column="95" selection-start-line="55" selection-start-column="95" selection-end-line="55" selection-end-column="95" />
         </state>
       </provider>
     </entry>

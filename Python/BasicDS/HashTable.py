@@ -10,14 +10,25 @@ from BasicDS.AVLTreeMap import AVLTreeMap
 
 
 class HashTable:
+    """
+    均摊复杂度分析：
+        O(1)
+    哈希表速度虽然很快，但哈希表失去了顺序性
+    """
     # 常量
+    capacity= [
+        53, 97, 193, 389, 769, 1543, 3079, 6151, 12289, 24593,
+        49157, 98317, 196613, 393241, 786433, 1572869, 3145739, 6291469,
+        12582917, 25165843, 50331653, 100663319, 201326611, 402653189, 805306457, 1610612741
+    ]
     upperTol = 10  # 扩容
     lowerTol = 2  # 缩容
-    initCapacity = 7
+    # 变量
+    capacityIndex = 0
 
-    def __init__(self, M=initCapacity):
-        self.__hashtable = [AVLTreeMap() for _ in range(M)]
-        self.__M = M
+    def __init__(self):
+        self.__M = HashTable.capacity[HashTable.capacityIndex]
+        self.__hashtable = [AVLTreeMap() for _ in range(self.__M)]
         self.__size = 0
 
     # 产生哈希值
@@ -36,8 +47,9 @@ class HashTable:
         else:
             map.add(key, value)
             self.__size += 1
-            if self.__size >= HashTable.upperTol * self.__M:
-                self.__resize(2 * self.__M)
+            if self.__size >= HashTable.upperTol * self.__M and HashTable.capacityIndex + 1 < len(HashTable.capacity):
+                HashTable.capacityIndex += 1
+                self.__resize(HashTable.capacity[HashTable.capacityIndex])
 
     # 从哈希表中删除元素
     def remove(self, key):
@@ -46,8 +58,9 @@ class HashTable:
         if map.contains(key):
             ret = map.remove(key)
             self.__size -= 1
-            if self.__size < HashTable.lowerTol * self.__M and self.__M / 2 >= HashTable.initCapacity:
-                self.__resize(int(self.__M / 2))
+            if self.__size < HashTable.lowerTol * self.__M and HashTable.capacityIndex - 1 >= 0:
+                HashTable.capacityIndex -= 1
+                self.__resize(HashTable.capacity[HashTable.capacityIndex])
         return ret
 
     # 更改哈希表中的元素
