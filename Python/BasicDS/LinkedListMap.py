@@ -1,4 +1,10 @@
 # coding=utf-8
+# @Time       : 2020/2/13
+# @Author     : Wang Xiaoxiao
+# @University : Dalian University of Technology
+# @FileName   : LinkedListMap.py
+# @Software   : PyCharm
+# @github     : https://github.com/i-love-linux/BasicDataStructure
 
 
 class LinkedListMap:

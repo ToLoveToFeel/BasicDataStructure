@@ -1,5 +1,10 @@
 # coding=utf-8
-import numpy as np
+# @Time       : 2020/2/12
+# @Author     : Wang Xiaoxiao
+# @University : Dalian University of Technology
+# @FileName   : LoopQueue.py
+# @Software   : PyCharm
+# @github     : https://github.com/i-love-linux/BasicDataStructure
 
 
 class LoopQueue:

@@ -1,4 +1,10 @@
 # coding=utf-8
+# @Time       : 2020/2/17
+# @Author     : Wang Xiaoxiao
+# @University : Dalian University of Technology
+# @FileName   : AVLTreeMap.py
+# @Software   : PyCharm
+# @github     : https://github.com/i-love-linux/BasicDataStructure
 from BasicDS.AVLTree import AVLTree
 
 

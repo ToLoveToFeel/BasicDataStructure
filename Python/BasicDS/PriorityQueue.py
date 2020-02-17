@@ -1,4 +1,10 @@
 # coding=utf-8
+# @Time       : 2020/2/14
+# @Author     : Wang Xiaoxiao
+# @University : Dalian University of Technology
+# @FileName   : PriorityQueue.py
+# @Software   : PyCharm
+# @github     : https://github.com/i-love-linux/BasicDataStructure
 from BasicDS.MaxHeap import MaxHeap
 from BasicDS.MinHeap import MinHeap
 

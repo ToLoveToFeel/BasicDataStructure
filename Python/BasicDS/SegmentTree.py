@@ -1,4 +1,10 @@
 # coding=utf-8
+# @Time       : 2020/2/15
+# @Author     : Wang Xiaoxiao
+# @University : Dalian University of Technology
+# @FileName   : SegmentTree.py
+# @Software   : PyCharm
+# @github     : https://github.com/i-love-linux/BasicDataStructure
 
 
 class SegmentTree:

@@ -1,4 +1,10 @@
 # coding=utf-8
+# @Time       : 2020/2/13
+# @Author     : Wang Xiaoxiao
+# @University : Dalian University of Technology
+# @FileName   : BST.py
+# @Software   : PyCharm
+# @github     : https://github.com/i-love-linux/BasicDataStructure
 from BasicDS.LinkedListStack import LinkedListStack
 from BasicDS.LinkedListQueue import LinkedListQueue
 
