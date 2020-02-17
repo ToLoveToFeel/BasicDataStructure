@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4af0155f-720b-4e9c-8737-a3d4662cec38" name="Default" comment="LinkedList 全局变量改为私有变量">
-      <change beforePath="$PROJECT_DIR$/AVLTreeMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/AVLTreeMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicDS/AVLTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicDS/AVLTree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicDS/AVLTreeMap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,17 +17,60 @@
       <file leaf-file-name="AVLTree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BasicDS/AVLTree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="223" column="92" selection-start-line="223" selection-start-column="92" selection-end-line="223" selection-end-column="92" />
+            <state relative-caret-position="383">
+              <caret line="252" column="8" selection-start-line="252" selection-start-column="8" selection-end-line="252" selection-end-column="8" />
+              <folding>
+                <element signature="e#35#166#1" />
+                <element signature="e#194#445#0" />
+                <element signature="e#271#445#0" />
+                <element signature="e#409#482#0" />
+                <element signature="e#536#554#0" />
+                <element signature="e#605#628#0" />
+                <element signature="e#751#925#0" />
+                <element signature="e#853#905#0" />
+                <element signature="e#849#979#0" />
+                <element signature="e#1178#1204#0" />
+                <element signature="e#1294#1516#0" />
+                <element signature="e#765#866#0" />
+                <element signature="e#756#820#0" />
+                <element signature="e#1834#1882#0" />
+                <element signature="e#2188#2498#0" />
+                <element signature="e#2496#2522#0" />
+                <element signature="e#2898#3236#0" />
+                <element signature="e#699#748#0" />
+                <element signature="e#754#794#0" />
+                <element signature="e#864#1222#0" />
+                <element signature="e#893#962#0" />
+                <element signature="e#3898#3904#0" />
+                <element signature="e#4325#4409#0" />
+                <element signature="e#4502#4588#0" />
+                <element signature="e#1259#1431#0" />
+                <element signature="e#1336#1411#0" />
+                <element signature="e#1508#1594#0" />
+                <element signature="e#1929#1951#0" />
+                <element signature="e#5498#6698#0" />
+                <element signature="e#2099#2164#0" />
+                <element signature="e#2206#2273#0" />
+                <element signature="e#2319#3169#0" />
+                <element signature="e#2385#2534#0" />
+                <element signature="e#2614#2759#0" />
+                <element signature="e#6269#6667#0" />
+                <element signature="e#6290#6322#0" />
+                <element signature="e#6626#6632#0" />
+                <element signature="e#7481#7573#0" />
+                <element signature="e#7682#7776#0" />
+                <element signature="e#3392#3524#0" />
+                <element signature="e#3563#3610#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AVLTreeMain.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AVLTreeMain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AVLTreeMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-588">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="30">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="10" />
               <folding>
                 <element signature="e#15#25#0" expanded="true" />
               </folding>
@@ -35,11 +78,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AVLTreeMap.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BasicDS/AVLTreeMap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedListMap.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BasicDS/LinkedListMap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="65" column="42" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="65" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BSTMap.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BasicDS/BSTMap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state>
+              <caret selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -153,10 +214,11 @@
         <option value="$PROJECT_DIR$/BSTMapMain.py" />
         <option value="$PROJECT_DIR$/BasicDS/AVLTree.py" />
         <option value="$PROJECT_DIR$/AVLTreeMain.py" />
+        <option value="$PROJECT_DIR$/BasicDS/AVLTreeMap.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -215,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.AVLTreeMain">
+  <component name="RunManager" selected="Python.AVLTreeMapMain">
     <configuration name="AVLTreeMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -234,7 +296,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Trie" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="AVLTreeMapMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -242,11 +304,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BasicDS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BasicDS/Trie.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AVLTreeMapMain.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -307,19 +369,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.Trie" />
       <item itemvalue="Python.TrieMain" />
       <item itemvalue="Python.UFMain" />
       <item itemvalue="Python.UFNumpy" />
       <item itemvalue="Python.AVLTreeMain" />
+      <item itemvalue="Python.AVLTreeMapMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AVLTreeMapMain" />
         <item itemvalue="Python.AVLTreeMain" />
         <item itemvalue="Python.UFMain" />
         <item itemvalue="Python.UFNumpy" />
         <item itemvalue="Python.TrieMain" />
-        <item itemvalue="Python.Trie" />
       </list>
     </recent_temporary>
   </component>
@@ -352,15 +414,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27409372" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13645834" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32230523" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3192389" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -407,9 +469,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BasicDS/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ArrayStackMain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -617,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BasicDS/LinkedListMap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BSTSetMain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -722,13 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BasicDS/BSTMap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/851012445/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -736,20 +781,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BasicDS/AVLTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="223" column="92" selection-start-line="223" selection-start-column="92" selection-end-line="223" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AVLTreeMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-588">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="10" />
           <folding>
             <element signature="e#15#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/BSTMap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/LinkedListMap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="65" column="42" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="65" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/AVLTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="252" column="8" selection-start-line="252" selection-start-column="8" selection-end-line="252" selection-end-column="8" />
+          <folding>
+            <element signature="e#35#166#1" />
+            <element signature="e#194#445#0" />
+            <element signature="e#271#445#0" />
+            <element signature="e#409#482#0" />
+            <element signature="e#536#554#0" />
+            <element signature="e#605#628#0" />
+            <element signature="e#751#925#0" />
+            <element signature="e#853#905#0" />
+            <element signature="e#849#979#0" />
+            <element signature="e#1178#1204#0" />
+            <element signature="e#1294#1516#0" />
+            <element signature="e#765#866#0" />
+            <element signature="e#756#820#0" />
+            <element signature="e#1834#1882#0" />
+            <element signature="e#2188#2498#0" />
+            <element signature="e#2496#2522#0" />
+            <element signature="e#2898#3236#0" />
+            <element signature="e#699#748#0" />
+            <element signature="e#754#794#0" />
+            <element signature="e#864#1222#0" />
+            <element signature="e#893#962#0" />
+            <element signature="e#3898#3904#0" />
+            <element signature="e#4325#4409#0" />
+            <element signature="e#4502#4588#0" />
+            <element signature="e#1259#1431#0" />
+            <element signature="e#1336#1411#0" />
+            <element signature="e#1508#1594#0" />
+            <element signature="e#1929#1951#0" />
+            <element signature="e#5498#6698#0" />
+            <element signature="e#2099#2164#0" />
+            <element signature="e#2206#2273#0" />
+            <element signature="e#2319#3169#0" />
+            <element signature="e#2385#2534#0" />
+            <element signature="e#2614#2759#0" />
+            <element signature="e#6269#6667#0" />
+            <element signature="e#6290#6322#0" />
+            <element signature="e#6626#6632#0" />
+            <element signature="e#7481#7573#0" />
+            <element signature="e#7682#7776#0" />
+            <element signature="e#3392#3524#0" />
+            <element signature="e#3563#3610#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/AVLTreeMap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
