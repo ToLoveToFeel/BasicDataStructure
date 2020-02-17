@@ -1,8 +1,8 @@
 from BasicDS.Array import Array
 
 if __name__ == "__main__":
-    # arr = Array(20, "int")
-    # arr = Array(20, "np.float")
+    # arr = Array(20)
+    # arr = Array(arr=[1,2,3,4])
     arr = Array()
     for i in range(9):
         arr.addLast(i)

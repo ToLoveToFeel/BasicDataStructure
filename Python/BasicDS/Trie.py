@@ -23,7 +23,7 @@ class Trie:
     def add(self, word):
         cur = self.__root
         for c in word:
-            if cur.next.get(c) == None:  # 当前映射中不包含c
+            if cur.next.get(c) is None:  # 当前映射中不包含c
                 cur.next.add(c, self.__Node())
             cur = cur.next.get(c)  # 获取字符c对应的下一个节点
         if not cur.isWord:
@@ -34,7 +34,7 @@ class Trie:
     def contains(self, word):
         cur = self.__root
         for c in word:
-            if cur.next.get(c) == None:
+            if cur.next.get(c) is None:
                 return False
             cur = cur.next.get(c)
         return cur.isWord
@@ -43,7 +43,7 @@ class Trie:
     def isPrefix(self, prefix):
         cur = self.__root
         for c in prefix:
-            if cur.next.get(c) == None:
+            if cur.next.get(c) is None:
                 return False
             cur = cur.next.get(c)
         return True

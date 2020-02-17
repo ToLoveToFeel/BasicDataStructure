@@ -4,6 +4,7 @@ import random
 import time
 from BasicDS.MinHeap import MinHeap
 
+
 def testHeap(testData, isHeapify):
     startTime = time.time()
 

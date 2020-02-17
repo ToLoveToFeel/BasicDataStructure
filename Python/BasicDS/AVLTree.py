@@ -40,7 +40,7 @@ class AVLTree:
         return True
 
     def __inOrder(self, node, keys):
-        if node == None:
+        if node is None:
             return
         self.__inOrder(node.left, keys)
         keys.append(node.key)
@@ -52,7 +52,7 @@ class AVLTree:
 
     # 判断以node为根的二叉树是否是一棵平衡二叉树，递归算法
     def __isBalanced(self, node):
-        if node == None:
+        if node is None:
             return True
 
         balanceFactor = self.__getBlanceFactor(node)
@@ -62,13 +62,13 @@ class AVLTree:
 
     # 获取节点node的平衡因子
     def __getBlanceFactor(self, node):
-        if node == None:
+        if node is None:
             return 0
         return self.__getHeight(node.left) - self.__getHeight(node.right)
 
     # 获取节点的高度值
     def __getHeight(self, node):
-        if node == None:
+        if node is None:
             return 0
         return node.height
 
@@ -125,7 +125,7 @@ class AVLTree:
     # 向以node为根节点的二分搜索树中添加元素(key, value)，递归算法
     # 返回插入新节点后二分搜索树的根
     def __add(self, node, key, value):
-        if node == None:
+        if node is None:
             self.__size += 1
             return self.__Node(key=key, value=value)
 
@@ -160,21 +160,21 @@ class AVLTree:
 
     def remove(self, key):
         node = self.__getNode(self.__root, key)
-        if node != None:
+        if node is not None:
             self.__root = self.__remove(self.__root, key)
             return node.value
         return None
 
     # 返回以node为根的二分搜索树的最小值所在的节点，递归算法
     def __minimum(self, node):
-        if node.left == None:
+        if node.left is None:
             return node
         return self.__minimum(node.left)
 
     # 从二分搜索树中删除键为e的节点，递归算法
     # 返回删除节点后新的二分搜索树的根
     def __remove(self, node, key):
-        if node == None:
+        if node is None:
             return None
 
         retNode = None
@@ -186,13 +186,13 @@ class AVLTree:
             retNode = node
         else:  # key == node.key
             # 待删除节点左子树为空的情况
-            if node.left == None:
+            if node.left is None:
                 rightNode = node.right
                 del node
                 self.__size -= 1
                 retNode = rightNode
             # 待删除节点右子树为空的情况
-            elif node.right == None:
+            elif node.right is None:
                 leftNode = node.left
                 del node
                 self.__size -= 1
@@ -208,7 +208,7 @@ class AVLTree:
 
                 retNode = successor
 
-        if retNode == None: # 删除节点后返回空节点直接返回即可，不需要对空节点维护平衡
+        if retNode is None:  # 删除节点后返回空节点直接返回即可，不需要对空节点维护平衡
             return None
 
         # 更新height
@@ -235,13 +235,13 @@ class AVLTree:
 
     def set(self, key, value):
         node = self.__getNode(self.__root, key)
-        if node == None:
+        if node is None:
             raise Exception(str(key) + " does't exist!")
         node.value = value
 
     def get(self, key):
         node = self.__getNode(self.__root, key)
-        if node == None:
+        if node is None:
             return None
         else:
             return node.value
@@ -251,7 +251,7 @@ class AVLTree:
 
     # 返回以node为根节点的二分搜索树中，key所在的节点
     def __getNode(self, node, key):
-        if node == None:
+        if node is None:
             return None
 
         if key == node.key:

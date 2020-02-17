@@ -98,7 +98,7 @@ class SegmentTree:
     def __str__(self):
         res = "["
         for i in range(len(self.__tree)):
-            if self.__tree[i] != None:
+            if self.__tree[i] is not None:
                 res += str(self.__tree[i])
             else:
                 res += "None"

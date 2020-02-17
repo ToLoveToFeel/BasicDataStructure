@@ -44,7 +44,8 @@ class LoopQueue:
 
     # 元素出队，同时返回队首元素
     def dequeue(self):
-        assert not self.isEmpty(), "Cannot dequeue from an empty queue."
+        if self.isEmpty():
+            raise Exception("Cannot dequeue from an empty queue.")
 
         ret = self.__data[self.__front]
         self.__front = (self.__front + 1) % len(self.__data)

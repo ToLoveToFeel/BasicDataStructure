@@ -9,13 +9,7 @@ class BST:
             self.e = element
             self.left = left
             self.right = right
-    """
-    时间复杂度分析：
-    添加操作：
-    删除操作：
-    修改操作：
-    查找操作：
-    """
+
     def __init__(self):
         self.__root = None
         self.__size = 0
@@ -36,7 +30,7 @@ class BST:
     # 向以node为根节点的二分搜索树中添加元素e，递归算法
     # 返回插入新节点后二分搜索树的根
     def __add(self, node, e):
-        if node == None:
+        if node is None:
             self.__size += 1
             return self.__Node(element=e)
 
@@ -53,7 +47,7 @@ class BST:
 
     # 看以node为根的二分搜索树中是否包含元素e，递归算法
     def __contains(self, node, e):
-        if node == None:
+        if node is None:
             return False
 
         if e == node.e:
@@ -69,7 +63,7 @@ class BST:
 
     # 前序遍历以node为根的二分搜索树，递归算法
     def __preOrder(self, node):
-        if node == None:
+        if node is None:
             return
 
         print(node.e)
@@ -78,7 +72,7 @@ class BST:
 
     # 二分搜索树的前序遍历的非递归实现
     def preOrderNR(self):
-        if self.__root == None:
+        if self.__root is None:
             return
 
         stack = LinkedListStack()
@@ -87,9 +81,9 @@ class BST:
             cur = stack.pop()
             print(cur.e)
 
-            if cur.right != None:
+            if cur.right is not None:
                 stack.push(cur.right)
-            if cur.left != None:
+            if cur.left is not None:
                 stack.push(cur.left)
 
     # 二分搜索树的中序遍历
@@ -98,7 +92,7 @@ class BST:
 
     # 中序遍历以node为根的二分搜索树，递归算法
     def __inOrder(self, node):
-        if node == None:
+        if node is None:
             return
 
         self.__inOrder(node.left)
@@ -111,7 +105,7 @@ class BST:
 
     # 后序遍历以node为根的二分搜索树，递归算法
     def __postOrder(self, node):
-        if node == None:
+        if node is None:
             return
 
         self.__postOrder(node.left)
@@ -120,7 +114,7 @@ class BST:
 
     # 二分搜索树的层序遍历
     def levelOrder(self):
-        if self.__root == None:
+        if self.__root is None:
             return
 
         queue = LinkedListQueue()
@@ -128,9 +122,9 @@ class BST:
         while not queue.isEmpty():
             cur = queue.dequeue()
             print(cur.e)
-            if cur.left != None:
+            if cur.left is not None:
                 queue.enqueue(cur.left)
-            if cur.right != None:
+            if cur.right is not None:
                 queue.enqueue(cur.right)
 
     # 寻找二分搜索树中的最小元素
@@ -140,7 +134,7 @@ class BST:
 
     # 返回以node为根的二分搜索树的最小值所在的节点，递归算法
     def __minimum(self, node):
-        if node.left == None:
+        if node.left is None:
             return node
         return self.__minimum(node.left)
 
@@ -151,7 +145,7 @@ class BST:
 
     # 返回以node为根的二分搜索树的最大值所在的节点，递归算法
     def __maximum(self, node):
-        if node.right == None:
+        if node.right is None:
             return node
         return self.__maximum(node.right)
 
@@ -164,7 +158,7 @@ class BST:
     # 删除以node为根的二分搜索树中的最小节点
     # 返回删除节点后新的二分搜索树的根
     def __removeMin(self, node):
-        if node.left == None:
+        if node.left is None:
             rightNode = node.right
             # node.right = None
             del node
@@ -182,7 +176,7 @@ class BST:
     # 删除以node为根的二分搜索树中的最大节点
     # 返回删除节点后新的二分搜索树的根
     def __removeMax(self, node):
-        if node.right == None:
+        if node.right is None:
             leftNode = node.left
             # node.left = None
             del node
@@ -198,7 +192,7 @@ class BST:
     # 从二分搜索树中删除元素为e的节点，递归算法
     # 返回删除节点后新的二分搜索树的根
     def __remove(self, node, e):
-        if node == None:
+        if node is None:
             return None
 
         if e < node.e:
@@ -209,14 +203,14 @@ class BST:
             return node
         else:  # e == node.e
             # 待删除节点左子树为空的情况
-            if node.left == None:
+            if node.left is None:
                 rightNode = node.right
                 # node.right = None
                 del node
                 self.__size -= 1
                 return rightNode
             # 待删除节点右子树为空的情况
-            if node.right == None:
+            if node.right is None:
                 leftNode = node.left
                 # node.left = None
                 del node
@@ -240,7 +234,7 @@ class BST:
 
     # 生成以node为根节点，深度为depth的描述二叉树的字符串
     def __generateBSTString(self, node, depth):
-        if node == None:
+        if node is None:
             self.__treeString = self.__treeString + self.__generateDepthString(depth) + "null\n"
             return
 

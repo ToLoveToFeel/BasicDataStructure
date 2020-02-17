@@ -29,7 +29,7 @@ class LinkedListQueue:
 
     # 入队
     def enqueue(self, e):
-        if self._tail == None:
+        if self._tail is None:
             self._tail = self.__Node(element=e)
             self._head = self._tail
         else:
@@ -39,12 +39,13 @@ class LinkedListQueue:
 
     # 元素出队，同时返回队首元素
     def dequeue(self):
-        assert not self.isEmpty(), "Cannot dequeue from an empty queue."
+        if self.isEmpty():
+            raise Exception("Cannot dequeue from an empty queue.")
 
         retNode = self._head
         self._head = self._head.next
         retNode.next = None
-        if self._head == None:
+        if self._head is None:
             self._tail = None
 
         retValue = retNode.e
@@ -61,7 +62,7 @@ class LinkedListQueue:
     def __str__(self):
         res = "LinkedListQueue: front "
         cur = self._head
-        while cur != None:
+        while cur is not None:
             res = res + str(cur.e) + "->"
             cur = cur.next
         res += "NULL tail"

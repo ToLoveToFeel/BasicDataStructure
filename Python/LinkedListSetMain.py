@@ -4,11 +4,11 @@ from BasicDS.LinkedListSet import LinkedListSet
 
 
 if __name__ == "__main__":
-    words1 = readFile("./books/pride-and-prejudice.txt")
+    words = readFile("./books/pride-and-prejudice.txt")
     print("pride-and-prejudice:")
-    print("Total words: ", len(words1))
+    print("Total words: ", len(words))
     set1 = LinkedListSet()
-    for item in words1:
+    for item in words:
         set1.add(item)
     print("Total different words: ", set1.getSize())
 

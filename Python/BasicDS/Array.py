@@ -12,8 +12,8 @@ class Array:
     查：已知索引O(1)，未知索引O(n)
     """
     # 构造函数
-    def __init__(self, capacity=10, arr=[]):
-        if len(arr) != 0:
+    def __init__(self, capacity=10, arr=None):
+        if arr is not None:
             self.__data = arr
             self.__size = len(arr)  # 数组实际大小
         else:
@@ -46,8 +46,8 @@ class Array:
 
     # 在第index个位置插入一个新元素e
     def add(self, index, e):
-        # assert 条件为False时执行
-        assert not (index < 0 or index > self.__size), "Add failed. Requre index >= 0 and index <= size."
+        if index < 0 or index > self.__size:
+            raise Exception("Add failed. Requre index >= 0 and index <= size.")
 
         if self.__size == len(self.__data):  # 扩容
             self.__resize(2 * len(self.__data))
@@ -60,7 +60,8 @@ class Array:
 
     # 获取index索引位置的元素
     def get(self, index):
-        assert not (index < 0 or index >= self.__size), "Get failed. Index is illegal."
+        if index < 0 or index >= self.__size:
+            raise Exception("Get failed. Index is illegal.")
         return self.__data[index]
 
     # 获取第一个元素
@@ -73,7 +74,8 @@ class Array:
 
     # 修改index索引位置的元素为e
     def set(self, index, e):
-        assert not (index < 0 or index >= self.__size), "Set failed. Index is illegal."
+        if index < 0 or index >= self.__size:
+            raise Exception("Set failed. Index is illegal.")
         self.__data[index] = e
 
     # 查找数组中是否有元素e
@@ -92,7 +94,8 @@ class Array:
 
     # 从数组中删除index位置的元素，返回删除的元素
     def remove(self, index):
-        assert not (index < 0 or index >= self.__size), "Set failed. Index is illegal."
+        if index < 0 or index >= self.__size:
+            raise Exception("Set failed. Index is illegal.")
 
         ret = self.__data[index]
         for i in range(index+1, self.__size):
@@ -120,7 +123,8 @@ class Array:
 
     # 交换索引为i和j位置的两个元素
     def swap(self, i, j):
-        assert not (i < 0 or i >= self.__size or j < 0 or j >= self.__size), "Index is illegal."
+        if i < 0 or i >= self.__size or j < 0 or j >= self.__size:
+            raise Exception("Index is illegal.")
         t = self.__data[i]
         self.__data[i] = self.__data[j]
         self.__data[j] = t
@@ -141,7 +145,7 @@ class Array:
         newData = [0 for _ in range(newCapacity)]
         for i in range(self.__size):
             newData[i] = self.__data[i]
-        del(self.__data)
+        del self.__data
         self.__data = newData
 
 

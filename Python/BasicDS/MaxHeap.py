@@ -4,8 +4,8 @@ from BasicDS.Array import Array
 
 class MaxHeap:
 
-    def __init__(self, capacity=10, arr=[]):
-        if len(arr) != 0:
+    def __init__(self, capacity=10, arr=None):
+        if arr is not None:
             # 传入数组(list)，实现heapify
             self.__data = Array(arr=arr)
             for i in range(self.__parent(len(arr) - 1), -1, -1):

@@ -36,7 +36,7 @@ class BSTMap:
     # 向以node为根节点的二分搜索树中添加元素(key, value)，递归算法
     # 返回插入新节点后二分搜索树的根
     def __add(self, node, key, value):
-        if node == None:
+        if node is None:
             self.__size += 1
             return self.__Node(key=key, value=value)
 
@@ -51,21 +51,21 @@ class BSTMap:
 
     def remove(self, key):
         node = self.__getNode(self.__root, key)
-        if node != None:
+        if node is not None:
             self.__root = self.__remove(self.__root, key)
             return node.value
         return None
 
     # 返回以node为根的二分搜索树的最小值所在的节点，递归算法
     def __minimum(self, node):
-        if node.left == None:
+        if node.left is None:
             return node
         return self.__minimum(node.left)
 
     # 删除以node为根的二分搜索树中的最小节点
     # 返回删除节点后新的二分搜索树的根
     def __removeMin(self, node):
-        if node.left == None:
+        if node.left is None:
             rightNode = node.right
             # node.right = None
             del node
@@ -77,7 +77,7 @@ class BSTMap:
     # 从二分搜索树中删除键为e的节点，递归算法
     # 返回删除节点后新的二分搜索树的根
     def __remove(self, node, key):
-        if node == None:
+        if node is None:
             return None
 
         if key < node.key:
@@ -88,14 +88,14 @@ class BSTMap:
             return node
         else:  # key == node.key
             # 待删除节点左子树为空的情况
-            if node.left == None:
+            if node.left is None:
                 rightNode = node.right
                 # node.right = None
                 del node
                 self.__size -= 1
                 return rightNode
             # 待删除节点右子树为空的情况
-            if node.right == None:
+            if node.right is None:
                 leftNode = node.left
                 # node.left = None
                 del node
@@ -114,23 +114,23 @@ class BSTMap:
 
     def set(self, key, value):
         node = self.__getNode(self.__root, key)
-        if node == None:
+        if node is None:
             raise Exception(str(key) + " does't exist!")
         node.value = value
 
     def get(self, key):
         node = self.__getNode(self.__root, key)
-        if node == None:
+        if node is None:
             return None
         else:
             return node.value
 
     def contains(self, key):
-        return self.__getNode(self.__root, key) != None
+        return self.__getNode(self.__root, key) is not None
 
     # 返回以node为根节点的二分搜索树中，key所在的节点
     def __getNode(self, node, key):
-        if node == None:
+        if node is None:
             return None
 
         if key == node.key:

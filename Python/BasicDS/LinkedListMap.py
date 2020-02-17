@@ -27,7 +27,7 @@ class LinkedListMap:
 
     def add(self, key, value):
         node = self.__getNode(key)
-        if node == None:
+        if node is None:
             self.__dummyHead.next = self.__Node(key, value, self.__dummyHead.next)
             self.__size += 1
         else:  # key已经存在，更新(key,value)对
@@ -35,7 +35,7 @@ class LinkedListMap:
 
     def remove(self, key):
         prev = self.__dummyHead
-        while prev.next != None:
+        while prev.next is not None:
             if prev.next.key == key:
                 break
             prev = prev.next
@@ -51,13 +51,13 @@ class LinkedListMap:
 
     def set(self, key, value):
         node = self.__getNode(key)
-        if node == None:
+        if node is None:
             raise Exception(str(key) + " does't exist!")
         node.value = value
 
     def get(self, key):
         node = self.__getNode(key)
-        if node == None:
+        if node is None:
             return None
         else:
             return node.value
@@ -67,7 +67,7 @@ class LinkedListMap:
 
     def __getNode(self, key):
         cur = self.__dummyHead
-        while cur != None:
+        while cur is not None:
             if cur.key == key:
                 return cur
             cur = cur.next

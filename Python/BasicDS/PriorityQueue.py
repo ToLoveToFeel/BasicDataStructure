@@ -5,7 +5,7 @@ from BasicDS.MinHeap import MinHeap
 
 class PriorityQueue:
 
-    def __init__(self, capacity=10, arr=[], isMaxHeap=True):
+    def __init__(self, capacity=10, arr=None, isMaxHeap=True):
         if isMaxHeap:
             self.__data = MaxHeap(capacity=capacity, arr=arr)
         else:

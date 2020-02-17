@@ -4,11 +4,11 @@ from BasicDS.LinkedListMap import LinkedListMap
 
 
 if __name__ == "__main__":
-    words1 = readFile("./books/pride-and-prejudice.txt")
+    words = readFile("./books/pride-and-prejudice.txt")
     print("pride-and-prejudice:")
-    print("Total words: ", len(words1))
+    print("Total words: ", len(words))
     map = LinkedListMap()
-    for word in words1:
+    for word in words:
         if map.contains(word):
             map.set(word, map.get(word) + 1)
         else:

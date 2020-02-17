@@ -52,7 +52,8 @@ class LinkedList:
     # 获得链表的第index(0-based)个位置的元素
     # 在链表中不是一个常用的操作，练习用
     def get(self, index):
-        assert not (index < 0 or index >= self.__size), "Add failed. Illegal index."
+        if index < 0 or index >= self.__size:
+            raise Exception("Add failed. Illegal index.")
 
         cur = self.__dummyHead.next
         for i in range(index):
@@ -79,7 +80,7 @@ class LinkedList:
     # 在链表中查找是否有元素e
     def contains(self, e):
         cur = self.__dummyHead
-        while cur != None:
+        while cur is not None:
             if cur.e == e:
                 return True
             cur = cur.next
@@ -113,12 +114,12 @@ class LinkedList:
     # 从链表中删除元素e
     def removeElement(self, e):
         prev = self.__dummyHead
-        while prev.next != None:
+        while prev.next is not None:
             if prev.next.e == e:
                 break
             prev = prev.next
 
-        if prev.next != None:
+        if prev.next is not None:
             delNode = prev.next
             prev.next = delNode.next
             del delNode
@@ -130,7 +131,7 @@ class LinkedList:
     def getString(self):
         res = ""
         cur = self.__dummyHead.next
-        while cur != None:
+        while cur is not None:
             res = res + str(cur.e) + "->"
             cur = cur.next
         res += "NULL"
