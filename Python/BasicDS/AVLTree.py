@@ -108,7 +108,7 @@ class AVLTree:
         x = y.right
         T2 = x.left
 
-        # 向右旋转过程
+        # 向左旋转过程
         x.left = y
         y.right = T2
 
@@ -141,13 +141,19 @@ class AVLTree:
 
         # 计算平衡因子
         balanceFactor = self.__getBlanceFactor(node)
-        # if abs(balanceFactor) > 1:
-        #     print("unbalanced : ", balanceFactor)
 
         # 平衡维护
-        if balanceFactor > 1 and self.__getBlanceFactor(node.left) >= 0:
+        # if balanceFactor > 1 and self.__getBlanceFactor(node.left) >= 0:  # LL，这种写法也行
+        if balanceFactor > 1 and self.__getBlanceFactor(node.left) > 0:  # LL
             return self.__RightRotate(node)
-        if balanceFactor < -1 and self.__getHeight(node.right) <= 0:
+        # if balanceFactor < -1 and self.__getBlanceFactor(node.right) <= 0:  # RR，这种写法也行
+        if balanceFactor < -1 and self.__getBlanceFactor(node.right) < 0:  # RR
+            return self.__LeftRotate(node)
+        if balanceFactor > 1 and self.__getBlanceFactor(node.left) < 0:  # LR
+            node.left = self.__LeftRotate(node.left)
+            return self.__RightRotate(node)
+        if balanceFactor < -1 and self.__getBlanceFactor(node.right) > 0:  # RL
+            node.right = self.__RightRotate(node.right)
             return self.__LeftRotate(node)
 
         return node
