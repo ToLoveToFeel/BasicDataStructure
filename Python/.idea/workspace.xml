@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4af0155f-720b-4e9c-8737-a3d4662cec38" name="Default" comment="LinkedList 全局变量改为私有变量">
-      <change afterPath="$PROJECT_DIR$/BasicDS/AVLTreeSet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicDS/AVLTreeMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicDS/AVLTreeMap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AVLTreeSetMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/AVLTreeSetMain.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,32 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AVLTreeMain.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AVLTreeMain.py">
+      <file leaf-file-name="AVLTreeSetMain.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVLTreeSetMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-              <folding>
-                <element signature="e#15#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AVLTreeMap.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/AVLTreeMap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AVLTreeMapMain.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AVLTreeMapMain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="291">
+              <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="55" />
               <folding>
                 <element signature="e#15#26#0" expanded="true" />
               </folding>
@@ -47,34 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AVLTree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/AVLTree.py">
+      <file leaf-file-name="PriorityQueue.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BasicDS/PriorityQueue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-              <folding>
-                <element signature="e#1834#1882#0" />
-                <element signature="e#3898#3904#0" />
-                <element signature="e#6626#6632#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AVLTreeSet.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BasicDS/AVLTreeSet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="22" column="26" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedListSet.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/LinkedListSet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="22" lean-forward="true" selection-end-line="30" />
+            <state>
+              <caret selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -126,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_01_Arrays.py" />
         <option value="$PROJECT_DIR$/_01_Arrays/Arrays.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/ArrayStackMain.py" />
@@ -173,10 +128,11 @@
         <option value="$PROJECT_DIR$/UFMain.py" />
         <option value="$PROJECT_DIR$/BSTMapMain.py" />
         <option value="$PROJECT_DIR$/BasicDS/AVLTree.py" />
-        <option value="$PROJECT_DIR$/AVLTreeMain.py" />
-        <option value="$PROJECT_DIR$/AVLTreeMapMain.py" />
         <option value="$PROJECT_DIR$/BasicDS/AVLTreeMap.py" />
         <option value="$PROJECT_DIR$/BasicDS/AVLTreeSet.py" />
+        <option value="$PROJECT_DIR$/AVLTreeMapMain.py" />
+        <option value="$PROJECT_DIR$/AVLTreeSetMain.py" />
+        <option value="$PROJECT_DIR$/AVLTreeMain.py" />
       </list>
     </option>
   </component>
@@ -239,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.AVLTreeSetMain">
+  <component name="RunManager" selected="Python.AVLTreeMain">
     <configuration name="AVLTreeMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -339,9 +295,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AVLTreeMain" />
         <item itemvalue="Python.AVLTreeSetMain" />
         <item itemvalue="Python.AVLTreeMapMain" />
-        <item itemvalue="Python.AVLTreeMain" />
         <item itemvalue="Python.UFMain" />
         <item itemvalue="Python.UFNumpy" />
       </list>
@@ -372,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581598281919</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="AVLTreeSet">
+      <created>1581919234372</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581919234373</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -384,7 +347,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3192389" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3192389" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -423,7 +386,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="LinkedList 更正一处错误" />
     <MESSAGE value="LinkedList 全局变量改为私有变量" />
-    <option name="LAST_COMMIT_MESSAGE" value="LinkedList 全局变量改为私有变量" />
+    <MESSAGE value="AVLTreeSet" />
+    <option name="LAST_COMMIT_MESSAGE" value="AVLTreeSet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -431,13 +395,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LinkedListMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BasicDS/LinkedListStack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-617">
@@ -578,13 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BasicDS/PriorityQueue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -736,16 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVLTreeMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-          <folding>
-            <element signature="e#15#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BasicDS/LinkedListSet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -765,16 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVLTreeMapMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="e#15#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BasicDS/AVLTreeMap.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -784,8 +714,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BasicDS/AVLTreeSet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="26" />
+        <state relative-caret-position="-30">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVLTreeMapMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#15#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVLTreeMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <element signature="e#15#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVLTreeSetMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="55" />
+          <folding>
+            <element signature="e#15#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/PriorityQueue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="14" />
         </state>
       </provider>
     </entry>

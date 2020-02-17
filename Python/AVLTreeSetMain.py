@@ -10,12 +10,13 @@ if __name__ == "__main__":
     print("Total words: ", len(words))
 
     startTime = time.time()
-    avlMap = AVLTreeSet()
+    avlSet = AVLTreeSet()
     for word in words:
-        avlMap.add(word)
+        avlSet.add(word)
     for word in words:
-        avlMap.contains(word)
+        avlSet.contains(word)
     endTime = time.time()
+    print("Total different words : ", avlSet.getSize())
     print("AVLTreeSet : ", endTime - startTime, " s")
 
 
