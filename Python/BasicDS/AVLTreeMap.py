@@ -40,3 +40,6 @@ class AVLTreeMap:
     def contains(self, key):
         self.__avl.contains(key)
 
+    def keySet(self):
+        return self.__avl.keySet()
+

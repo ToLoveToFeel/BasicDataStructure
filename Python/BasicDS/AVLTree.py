@@ -267,3 +267,15 @@ class AVLTree:
         else:  # key > node.key
             return self.__getNode(node.right, key)
 
+    # 返回所有的键对应的列表
+    def keySet(self):
+        keys = []
+        self.__keySet(self.__root, keys)
+        return keys
+
+    def __keySet(self, node, keys):
+        if node is None:
+            return
+        keys.append(node.key)
+        self.__keySet(node.left, keys)
+        self.__keySet(node.right, keys)

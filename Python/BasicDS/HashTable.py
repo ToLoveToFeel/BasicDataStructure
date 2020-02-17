@@ -10,8 +10,12 @@ from BasicDS.AVLTreeMap import AVLTreeMap
 
 
 class HashTable:
+    # 常量
+    upperTol = 10  # 扩容
+    lowerTol = 2  # 缩容
+    initCapacity = 7
 
-    def __init__(self, M=97):
+    def __init__(self, M=initCapacity):
         self.__hashtable = [AVLTreeMap() for _ in range(M)]
         self.__M = M
         self.__size = 0
@@ -32,6 +36,8 @@ class HashTable:
         else:
             map.add(key, value)
             self.__size += 1
+            if self.__size >= HashTable.upperTol * self.__M:
+                self.__resize(2 * self.__M)
 
     # 从哈希表中删除元素
     def remove(self, key):
@@ -40,6 +46,8 @@ class HashTable:
         if map.contains(key):
             ret = map.remove(key)
             self.__size -= 1
+            if self.__size < HashTable.lowerTol * self.__M and self.__M / 2 >= HashTable.initCapacity:
+                self.__resize(int(self.__M / 2))
         return ret
 
     # 更改哈希表中的元素
@@ -56,3 +64,17 @@ class HashTable:
     # 查找哈希表中键所对应的值
     def get(self, key):
         return self.__hashtable[self.__hash(key)].get(key)
+
+    # 动态容量
+    def __resize(self, newM):
+        newHashTable = [AVLTreeMap() for _ in range(newM)]
+
+        oldM = self.__M
+        self.__M = newM
+        for i in range(oldM):
+            map = self.__hashtable[i]
+            for key in map.keySet():
+                newHashTable[self.__hash(key)].add(key, map.get(key))
+
+        self.__hashtable = newHashTable
+

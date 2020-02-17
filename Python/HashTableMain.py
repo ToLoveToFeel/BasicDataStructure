@@ -10,7 +10,7 @@ if __name__ == "__main__":
     print("Total words: ", len(words))
 
     startTime = time.time()
-    ht = HashTable(131071)
+    ht = HashTable()
     for word in words:
         if ht.contains(word):
             ht.set(word, ht.get(word) + 1)
