@@ -1,22 +1,40 @@
 # coding=utf-8
+import sys
+import time
 from FileOperation import readFile
 from BasicDS.AVLTree import AVLTree
+from BasicDS.BSTMap import BSTMap
 
 
 if __name__ == "__main__":
-    words1 = readFile("./books/pride-and-prejudice.txt")
+    words = readFile("./books/pride-and-prejudice.txt")
     print("pride-and-prejudice:")
-    print("Total words: ", len(words1))
-    map = AVLTree()
-    for word in words1:
-        if map.contains(word):
-            map.set(word, map.get(word) + 1)
+    print("Total words: ", len(words))
+    words = sorted(words[:5000])
+    sys.setrecursionlimit(10000)  # set the maximum depth as 150000
+
+    startTime = time.time()
+    bstMap = BSTMap()
+    for word in words:
+        if bstMap.contains(word):
+            bstMap.set(word, bstMap.get(word) + 1)
         else:
-            map.add(word, 1)
-    print("Total different words: ", map.getSize())
-    print("Frequency of PRIDE: ", map.get("pride"))
-    print("Frequency of PREJUDICE: ", map.get("prejudice"))
-    print("is BST : ", map.isBST())
-    print("is Balanced : ", map.isBalanced())
+            bstMap.add(word, 1)
+    for word in words:
+        bstMap.contains(word)
+    endTime = time.time()
+    print("BSTMap : ", endTime - startTime, " s")
+
+    startTime = time.time()
+    avl = AVLTree()
+    for word in words:
+        if avl.contains(word):
+            avl.set(word, avl.get(word) + 1)
+        else:
+            avl.add(word, 1)
+    for word in words:
+        avl.contains(word)
+    endTime = time.time()
+    print("AVLTree : ", endTime - startTime, " s")
 
 
