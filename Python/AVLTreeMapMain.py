@@ -19,6 +19,6 @@ if __name__ == "__main__":
     for word in words:
         avlMap.contains(word)
     endTime = time.time()
-    print("AVLTree : ", endTime - startTime, " s")
+    print("AVLTreeMap : ", endTime - startTime, " s")
 
 

@@ -5,10 +5,10 @@ from BasicDS.AVLTree import AVLTree
 class AVLTreeMap:
     """
     时间复杂度分析(平均)：n为元素个数
-        增 add：O(n)
-        删 remove：O(n)
-        改 set：O(n)
-        查 get：O(n)      contains：O(n)
+        增 add：O(logn)
+        删 remove：O(logn)
+        改 set：O(logn)
+        查 get：O(logn)      contains：O(n)
     """
     def __init__(self):
         self.__avl = AVLTree()
