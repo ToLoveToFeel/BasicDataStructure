@@ -3,7 +3,6 @@ import random
 import time
 from BasicDS.UFQuickFind import UFQuickFind
 from BasicDS.UF import UF
-from BasicDS.UFNumpy import UFNumpy
 
 
 def testUF(uf, m):
@@ -33,7 +32,5 @@ if __name__ == "__main__":
     uf2 = UF(size)
     print("UF : ", testUF(uf2, m), " s")
 
-    uf3 = UFNumpy(size)
-    print("UFNumpy : ", testUF(uf3, m), " s")
 
 
