@@ -25,7 +25,7 @@ Next, you can use the package.
 * LinkedList，LinkedListStack，LinkedListQueue，LinkedListSet，LinkedListMap
 * LoopQueue
 * BST，BSTSet，BSTMap
-* AVLTree，AVLTreeMap，AVLTreeSet
+* AVLTree，AVLTreeSet，AVLTreeMap
 * MaxHeap，MinHeap，PriorityQueue
 * SegmentTree
 * Trie
@@ -37,7 +37,7 @@ Next, you can use the package.
 
 ### How to use?
 
-* Example 1:
+* Example 1:（动态数组）
 
 ```python
 from BasicDS import *
@@ -103,13 +103,15 @@ The size of array :  5
 
 array is empty :  False
 
-* Example 2:
+* Example 2:（队列）
 
 ```python
 from BasicDS import *
 
 if __name__ == "__main__":
     # 创建队列
+    # queue = LinkedListQueue()
+    # queue = LoopQueue()
     queue = ArrayQueue()
     # 判断队列是否为空
     print("queue is empty : ", queue.isEmpty())
@@ -138,13 +140,14 @@ The front of queue :  13
 
 ArrayQueue: front [14] tail
 
-* Example 3:
+* Example 3:（栈）
 
 ```python
 from BasicDS import *
 
 if __name__ == "__main__":
     # 创建栈
+    # stack = LinkedListStack()
     stack = ArrayStack()
     # 入栈五个元素
     for i in range(5):
@@ -173,7 +176,7 @@ The peek of stack :  20
 
 stack is empty :  False
 
-* Example 4:
+* Example 4:（集合Set）
 
 ```python
 from BasicDS import *
@@ -183,6 +186,9 @@ if __name__ == "__main__":
     # 出现次数："my":2，"dear":3，"is":1，"you"：2，"!":1
     data = ["my", "dear", "is", "you", "!", "dear", "my", "dear", "you"]
     # 创建集合
+    # set = BSTSet()
+    # set = AVLTreeSet()
+    # set = HashSet()
     set = LinkedListSet()
     # 向集合中添加元素
     for word in data:
@@ -195,7 +201,7 @@ if __name__ == "__main__":
     print("The size of set : ", set.getSize())
     # 查看集合中是否包含"my"
     print("set contains \"my\" after delete \"my\" : ", set.contains("my"))
-    # 判断栈是否为空
+    # 判断集合是否为空
     print("set is empty : ", set.isEmpty())
 ```
 
@@ -208,3 +214,103 @@ The size of set :  4
 set contains "my" after delete "my" :  False
 
 set is empty :  False
+
+* Example 5:（映射Map）
+
+```python
+from BasicDS import *
+
+if __name__ == "__main__":
+    # 需要处理的数据，5个不同的数据
+    # 出现次数："my":2，"dear":3，"is":1，"you"：2，"!":1
+    data = ["my", "dear", "is", "you", "!", "dear", "my", "dear", "you"]
+    # 创建映射
+    # map = BSTMap()
+    # map = AVLTreeMap()
+    # map = HashMap()
+    map = LinkedListMap()
+    # 向映射中添加元素
+    for word in data:
+        if map.contains(word):
+            map.add(word, map.get(word) + 1)
+        else:
+            map.add(word, 1)
+    # 查看映射中是否包含"my"
+    print("map contains \"my\" : ", map.contains("my"))
+    # 从映射中删除"my"
+    map.remove("my")
+    # 获取映射的大小
+    print("The size of map : ", map.getSize())
+    # 查看映射中是否包含"my"
+    print("map contains \"my\" after delete \"my\" : ", map.contains("my"))
+    # 判断映射是否为空
+    print("map is empty : ", map.isEmpty())
+    # 查看"dear"出现的次数
+    print("\"dear\" appears : ", map.get("dear"), " times.")
+```
+
+`result:`
+
+map contains "my" :  True
+
+The size of map :  4
+
+map contains "my" after delete "my" :  False
+
+map is empty :  False
+
+"dear" appears :  3  times.
+
+* Example 6:（线段树Segment）
+
+```python
+from BasicDS import *
+
+if __name__ == "__main__":
+    # 需要处理的数据
+    nums = [-2, 0, 3, -5]
+    # 创建线段树
+    segTree = SegmentTree(arr=nums, merger=(lambda a, b: a + b))
+    print("segTree is :", segTree)
+    # 查询数组nums索引在[0...2]范围的和，因为merger为+
+    print("[0...2] :", segTree.query(0, 2))
+    # 将数组nums[1]更新为1
+    segTree.set(1, 1)
+    # 查询线段树索引在[0...2]范围的和，因为merger为+
+    print("[0...2] after update :", segTree.query(0, 2))
+```
+
+`result:`
+
+segTree is : [-4, -2, -2, -2, 0, 3, -5, None, None, None, None, None, None, None, None, None]
+
+[0...2] : 1
+
+[0...2] after update : 2
+
+* Example 7:（字典树Trie）
+
+```python
+from BasicDS import *
+
+if __name__ == "__main__":
+    # 需要处理的数据
+    nums = [-2, 0, 3, -5]
+    # 创建线段树
+    segTree = SegmentTree(arr=nums, merger=(lambda a, b: a + b))
+    print("segTree is :", segTree)
+    # 查询数组nums索引在[0...2]范围的和，因为merger为+
+    print("[0...2] :", segTree.query(0, 2))
+    # 将数组nums[1]更新为1
+    segTree.set(1, 1)
+    # 查询线段树索引在[0...2]范围的和，因为merger为+
+    print("[0...2] after update :", segTree.query(0, 2))
+```
+
+`result:`
+
+segTree is : [-4, -2, -2, -2, 0, 3, -5, None, None, None, None, None, None, None, None, None]
+
+[0...2] : 1
+
+[0...2] after update : 2

@@ -25,6 +25,10 @@ class Trie:
     def getSize(self):
         return self.__size
 
+    # 判断Trie是否为空
+    def isEmpty(self):
+        return self.__size == 0
+
     # 向Trie中添加一个新的单词word
     def add(self, word):
         cur = self.__root
