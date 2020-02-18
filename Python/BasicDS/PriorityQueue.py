@@ -19,7 +19,7 @@ class PriorityQueue:
 
     # 获取队列大小
     def getSize(self):
-        return self.__data.size()
+        return self.__data.getSize()
 
     # 判断队列是否为空
     def isEmpty(self):
