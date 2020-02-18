@@ -371,23 +371,23 @@ if __name__ == "__main__":
     # 向Trie中添加元素
     for word in data:
         trie.add(word)
-    # 查看Trie中是否包含"my"
-    print("trie contains \"my\" : ", trie.contains("my"))
     # 获取Trie的大小
     print("The size of trie : ", trie.getSize())
     # 查看Trie中是否包含"my"
     print("trie contains \"my\" : ", trie.contains("my"))
+    # 查看Trie中是否包含前缀"de"
+    print("trie contains Prefix \"de\" : ", trie.isPrefix("de"))
     # 判断Trie是否为空
     print("trie is empty : ", trie.isEmpty())
 ```
 
 `result:`
 
-trie contains "my" :  True
-
 The size of trie :  5
 
 trie contains "my" :  True
+
+trie contains Prefix "de" :  True
 
 trie is empty :  False
 
