@@ -103,7 +103,7 @@ The size of array :  5
 
 array is empty :  False
 
-* Example k:
+* Example 2:
 
 ```python
 from BasicDS import *
@@ -137,3 +137,38 @@ The size of queue :  2
 The front of queue :  13
 
 ArrayQueue: front [14] tail
+
+* Example 3:
+
+```python
+from BasicDS import *
+
+if __name__ == "__main__":
+    # 创建栈
+    stack = ArrayStack()
+    # 入栈五个元素
+    for i in range(5):
+        stack.push(i + 17)
+    print(stack)
+    # 出队一个元素
+    stack.pop()
+    print(stack)
+    # 获取栈的大小
+    print("The size of stack : ", stack.getSize())
+    # 查看栈顶元素
+    print("The peek of stack : ", stack.peek())
+    # 判断栈是否为空
+    print("stack is empty : ", stack.isEmpty())
+```
+
+`result:`
+
+ArrayStack: [17, 18, 19, 20, 21] top
+
+ArrayStack: [17, 18, 19, 20] top
+
+The size of stack :  4
+
+The peek of stack :  20
+
+stack is empty :  False

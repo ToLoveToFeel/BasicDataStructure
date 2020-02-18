@@ -11,89 +11,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HashTable.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/HashTable.py">
+      <file leaf-file-name="Array.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BasicDS/Array.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="-282">
+              <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashSet.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/HashSet.py">
+      <file leaf-file-name="ArrayStackMain.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ArrayStackMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashMap.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/HashMap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashMapMain.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HashMapMain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-              <folding>
-                <element signature="e#15#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedListMain.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LinkedListMain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedListQueueMain.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LinkedListQueueMain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" selection-start-line="2" selection-end-line="10" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AVLTreeMapMain.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AVLTreeMapMain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="17" column="31" lean-forward="true" selection-end-line="27" />
-              <folding>
-                <element signature="e#15#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AVLTreeMap.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/AVLTreeMap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AVLTree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/AVLTree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="270" column="8" selection-start-line="270" selection-start-column="8" selection-end-line="270" selection-end-column="8" />
+            <state relative-caret-position="90">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="10" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -176,7 +107,6 @@
         <option value="$PROJECT_DIR$/new.py" />
         <option value="$PROJECT_DIR$/BasicDS/RBTreeMain.py" />
         <option value="$PROJECT_DIR$/RBTreeMain.py" />
-        <option value="$PROJECT_DIR$/BasicDS/Array.py" />
         <option value="$PROJECT_DIR$/BasicDS/ArrayQueue.py" />
         <option value="$PROJECT_DIR$/BasicDS/ArrayStack.py" />
         <option value="$PROJECT_DIR$/BasicDS/LoopQueue.py" />
@@ -208,10 +138,11 @@
         <option value="$PROJECT_DIR$/BasicDS/HashMap.py" />
         <option value="$PROJECT_DIR$/BasicDS/HashTable.py" />
         <option value="$PROJECT_DIR$/HashMapMain.py" />
+        <option value="$PROJECT_DIR$/BasicDS/Array.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -265,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.HashMapMain">
+  <component name="RunManager" selected="Python.ArrayStackMain">
     <configuration name="AVLTreeMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -297,6 +228,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AVLTreeMapMain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ArrayStackMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ArrayStackMain.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -338,38 +287,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="HashTableMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HashTableMain.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
-      <item itemvalue="Python.HashTableMain" />
       <item itemvalue="Python.HashSetMain" />
       <item itemvalue="Python.AVLTreeMapMain" />
       <item itemvalue="Python.AVLTreeMain" />
       <item itemvalue="Python.HashMapMain" />
+      <item itemvalue="Python.ArrayStackMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ArrayStackMain" />
         <item itemvalue="Python.HashMapMain" />
         <item itemvalue="Python.AVLTreeMapMain" />
         <item itemvalue="Python.AVLTreeMain" />
         <item itemvalue="Python.HashSetMain" />
-        <item itemvalue="Python.HashTableMain" />
       </list>
     </recent_temporary>
   </component>
@@ -409,15 +340,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1984375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1984375" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32241014" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32241014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -479,13 +410,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LoopQueueMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MaxHeapMain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-135">
@@ -620,13 +544,6 @@
           <folding>
             <element signature="e#15#25#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BasicDS/Array.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4020">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -857,8 +774,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LinkedListMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/Array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-282">
+          <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArrayStackMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
