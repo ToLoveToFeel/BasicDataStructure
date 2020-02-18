@@ -261,6 +261,16 @@ map is empty :  False
 
 "dear" appears :  3  times.
 
+* Example 5:（堆Heap）
+
+```python
+
+```
+
+`result:`
+
+
+
 * Example 6:（线段树Segment）
 
 ```python
@@ -294,23 +304,58 @@ segTree is : [-4, -2, -2, -2, 0, 3, -5, None, None, None, None, None, None, None
 from BasicDS import *
 
 if __name__ == "__main__":
-    # 需要处理的数据
-    nums = [-2, 0, 3, -5]
-    # 创建线段树
-    segTree = SegmentTree(arr=nums, merger=(lambda a, b: a + b))
-    print("segTree is :", segTree)
-    # 查询数组nums索引在[0...2]范围的和，因为merger为+
-    print("[0...2] :", segTree.query(0, 2))
-    # 将数组nums[1]更新为1
-    segTree.set(1, 1)
-    # 查询线段树索引在[0...2]范围的和，因为merger为+
-    print("[0...2] after update :", segTree.query(0, 2))
+    # 需要处理的数据，5个不同的数据
+    # 出现次数："my":2，"dear":3，"is":1，"you"：2，"!":1
+    data = ["my", "dear", "is", "you", "!", "dear", "my", "dear", "you"]
+    # 创建Trie
+    trie = Trie()
+    # 向Trie中添加元素
+    for word in data:
+        trie.add(word)
+    # 查看Trie中是否包含"my"
+    print("trie contains \"my\" : ", trie.contains("my"))
+    # 获取Trie的大小
+    print("The size of trie : ", trie.getSize())
+    # 查看Trie中是否包含"my"
+    print("trie contains \"my\" : ", trie.contains("my"))
+    # 判断Trie是否为空
+    print("trie is empty : ", trie.isEmpty())
 ```
 
 `result:`
 
-segTree is : [-4, -2, -2, -2, 0, 3, -5, None, None, None, None, None, None, None, None, None]
+trie contains "my" :  True
 
-[0...2] : 1
+The size of trie :  5
 
-[0...2] after update : 2
+trie contains "my" :  True
+
+trie is empty :  False
+
+* Example 8:（并查集Union Find）
+
+```python
+from BasicDS import *
+
+if __name__ == "__main__":
+    # 创建并查集，含有10个元素：0~9
+    uf = UF(size=10)
+    # 合并某两个集合
+    uf.unionElements(0, 1)
+    uf.unionElements(0, 2)
+    uf.unionElements(0, 3)
+    # 获取并查集的大小
+    print("The size of uf : ", uf.getSize())
+    # 判断某两个元素是否在同一个集合中
+    print("Element 1 and element 3 in a set : ", uf.isConnected(1, 3))
+    print("Element 1 and element 6 in a set : ", uf.isConnected(1, 6))
+```
+
+`result:`
+
+The size of uf :  10
+
+Element 1 and element 3 in a set :  True
+
+Element 1 and element 6 in a set :  False
+
