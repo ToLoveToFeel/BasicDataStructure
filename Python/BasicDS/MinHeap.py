@@ -20,7 +20,7 @@ class MinHeap:
             self.__data = Array(capacity=capacity)
 
     # 返回堆中的元素个数
-    def size(self):
+    def getSize(self):
         return self.__data.getSize()
 
     # 返回一个布尔值，表示堆中是否为空
