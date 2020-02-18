@@ -19,6 +19,9 @@ if __name__ == "__main__":
     for word in words:
         avlMap.contains(word)
     endTime = time.time()
+    print("Total different words: ", avlMap.getSize())
+    print("Frequency of pride: ", avlMap.get("pride"))
+    print("Frequency of prejudice: ", avlMap.get("prejudice"))
     print("AVLTreeMap : ", endTime - startTime, " s")
 
 

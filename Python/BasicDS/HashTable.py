@@ -39,6 +39,13 @@ class HashTable:
     def getSize(self):
         return self.__size
 
+    # 判断是否为空
+    def isEmpty(self):
+        for i in range(self.__M):
+            if not self.__hashtable[i].isEmpty():
+                return False
+        return True
+
     # 向哈希表中添加元素
     def add(self, key, value):
         map = self.__hashtable[self.__hash(key)]
@@ -91,3 +98,9 @@ class HashTable:
 
         self.__hashtable = newHashTable
 
+    # hashset元素个数
+    def getHashSetSize(self):
+        size = 0
+        for i in range(self.__M):
+            size += self.__hashtable[i].getSize()
+        return size

@@ -35,10 +35,10 @@ class AVLTreeMap:
         self.__avl.set(key, value)
 
     def get(self, key):
-        self.__avl.get(key)
+        return self.__avl.get(key)
 
     def contains(self, key):
-        self.__avl.contains(key)
+        return self.__avl.contains(key)
 
     def keySet(self):
         return self.__avl.keySet()

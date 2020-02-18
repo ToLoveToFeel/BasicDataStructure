@@ -23,7 +23,11 @@ if __name__ == "__main__":
     for word in words:
         bstMap.contains(word)
     endTime = time.time()
+    print("Total different words: ", bstMap.getSize())
+    print("Frequency of PRIDE: ", bstMap.get("pride"))
+    print("Frequency of PREJUDICE: ", bstMap.get("prejudice"))
     print("BSTMap : ", endTime - startTime, " s")
+    print()
 
     startTime = time.time()
     avl = AVLTree()
@@ -35,6 +39,9 @@ if __name__ == "__main__":
     for word in words:
         avl.contains(word)
     endTime = time.time()
+    print("Total different words: ", avl.getSize())
+    print("Frequency of PRIDE: ", avl.get("pride"))
+    print("Frequency of PREJUDICE: ", avl.get("prejudice"))
     print("AVLTree : ", endTime - startTime, " s")
 
     # 测试AVL删除函数
