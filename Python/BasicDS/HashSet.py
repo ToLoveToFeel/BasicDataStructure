@@ -13,7 +13,7 @@ class HashSet:
         self.__hashset = HashTable()
 
     def getSize(self):
-        return self.__hashset.getHashSetSize()
+        return self.__hashset.getUniqueSize()
 
     def isEmpty(self):
         return self.__hashset.isEmpty()

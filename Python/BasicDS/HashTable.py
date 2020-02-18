@@ -98,9 +98,17 @@ class HashTable:
 
         self.__hashtable = newHashTable
 
-    # hashset元素个数
-    def getHashSetSize(self):
+    # hashset，hashmap元素个数（不重复的元素个数）
+    def getUniqueSize(self):
         size = 0
         for i in range(self.__M):
             size += self.__hashtable[i].getSize()
         return size
+
+    # 键值集合
+    def keySet(self):
+        keys = []
+        for i in range(self.__M):
+            keys += self.__hashtable[i].keySet()
+        return keys
+
