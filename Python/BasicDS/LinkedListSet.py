@@ -29,7 +29,7 @@ class LinkedListSet:
             self.__list.addLast(e)
 
     def contains(self, e):
-        self.__list.contains(e)
+        return self.__list.contains(e)
 
     def remove(self, e):
         self.__list.removeElement(e)

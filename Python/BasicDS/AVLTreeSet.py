@@ -29,7 +29,7 @@ class AVLTreeSet:
             self.__avl.add(e, None)
 
     def contains(self, e):
-        self.__avl.contains(e)
+        return self.__avl.contains(e)
 
     def remove(self, e):
         self.__avl.remove(e)

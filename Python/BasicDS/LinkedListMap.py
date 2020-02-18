@@ -69,7 +69,7 @@ class LinkedListMap:
             return node.value
 
     def contains(self, key):
-        return self.__getNode(key) != None
+        return self.__getNode(key) is not None
 
     def __getNode(self, key):
         cur = self.__dummyHead

@@ -253,7 +253,7 @@ class AVLTree:
             return node.value
 
     def contains(self, key):
-        return self.__getNode(self.__root, key) != None
+        return self.__getNode(self.__root, key) is not None
 
     # 返回以node为根节点的平衡二叉树中，key所在的节点
     def __getNode(self, node, key):

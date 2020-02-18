@@ -28,7 +28,7 @@ class BSTSet:
         self.__bst.add(e)
 
     def contains(self, e):
-        self.__bst.contains(e)
+        return self.__bst.contains(e)
 
     def remove(self, e):
         self.__bst.remove(e)
