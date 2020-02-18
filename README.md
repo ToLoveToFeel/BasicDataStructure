@@ -10,7 +10,9 @@ Data Structure realized with Python.
 
 Just download the .whl file, then enter the directory. Finally you can install the package with the command:
 
-<center>pip install BasicDS-0.0.1.whl</center>
+```
+pip install BasicDS-0.0.1.whl
+```
 
 Next, you can use the package.
 
@@ -35,7 +37,7 @@ Next, you can use the package.
 
 ### How to use?
 
-<font color=red>Example 1:</font>
+`Example 1:`
 
 ```python
 from BasicDS import *
