@@ -72,11 +72,11 @@ class Array:
 
     # 获取第一个元素
     def getFirst(self):
-        return self.get(self.__size - 1)
+        return self.get(0)
 
     # 获取最后一个元素
     def getLast(self):
-        return self.get(0)
+        return self.get(self.__size - 1)
 
     # 修改index索引位置的元素为e
     def set(self, index, e):
