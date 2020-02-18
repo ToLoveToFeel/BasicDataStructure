@@ -62,11 +62,15 @@ if __name__ == "__main__":
 
 `result:`
 
-queue is empty :  True
-LinkedListQueue: front 13->14->NULL tail
-The size of queue :  2
-The front of queue :  13
-LinkedListQueue: front 14->NULL tail
+​	queue is empty :  True
+
+​	LinkedListQueue: front 13->14->NULL tail
+
+​	The size of queue :  2
+
+​	The front of queue :  13
+
+​	LinkedListQueue: front 14->NULL tail
 
 
 
