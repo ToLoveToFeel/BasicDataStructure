@@ -37,7 +37,7 @@ Next, you can use the package.
 
 ### How to use?
 
-`Example 1:`
+* Example 1:
 
 ```python
 from BasicDS import *
@@ -60,7 +60,13 @@ if __name__ == "__main__":
     print(queue)
 ```
 
+`result:`
 
+queue is empty :  True
+LinkedListQueue: front 13->14->NULL tail
+The size of queue :  2
+The front of queue :  13
+LinkedListQueue: front 14->NULL tail
 
 
 
