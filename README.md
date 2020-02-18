@@ -8,7 +8,7 @@ Data Structure realized with Python.
 
 ### How to install?
 
-Just download the .whl file, then enter the directory. Finally you can install the package with the command:
+Download the .whl file, then enter the directory where the .whl file is. Finally you can install the package with the command:
 
 ```
 pip install BasicDS-0.0.1.whl
