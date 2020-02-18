@@ -172,3 +172,39 @@ The size of stack :  4
 The peek of stack :  20
 
 stack is empty :  False
+
+* Example 4:
+
+```python
+from BasicDS import *
+
+if __name__ == "__main__":
+    # 需要处理的数据，5个不同的数据
+    # 出现次数："my":2，"dear":3，"is":1，"you"：2，"!":1
+    data = ["my", "dear", "is", "you", "!", "dear", "my", "dear", "you"]
+    # 创建集合
+    set = LinkedListSet()
+    # 向集合中添加元素
+    for word in data:
+        set.add(word)
+    # 查看集合中是否包含"my"
+    print("set contains \"my\" : ", set.contains("my"))
+    # 从集合中删除"my"
+    set.remove("my")
+    # 获取集合的大小
+    print("The size of set : ", set.getSize())
+    # 查看集合中是否包含"my"
+    print("set contains \"my\" after delete \"my\" : ", set.contains("my"))
+    # 判断栈是否为空
+    print("set is empty : ", set.isEmpty())
+```
+
+`result:`
+
+set contains "my" :  True
+
+The size of set :  4
+
+set contains "my" after delete "my" :  False
+
+set is empty :  False
