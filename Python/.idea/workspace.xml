@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4af0155f-720b-4e9c-8737-a3d4662cec38" name="Default" comment="LinkedList 全局变量改为私有变量">
-      <change afterPath="$PROJECT_DIR$/BasicDS/IndexMaxHeap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IndexMaxHeapMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BasicDS/IndexMinHeap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IndexMinHeapMain.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,92 +14,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Array.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/Array.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayQueue.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/ArrayQueue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayStack.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/ArrayStack.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedListSet.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/LinkedListSet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedListStack.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/LinkedListStack.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedListQueue.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/LinkedListQueue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedListMap.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/LinkedListMap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="834">
-              <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="IndexMaxHeap.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BasicDS/IndexMaxHeap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-404">
-              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="152" />
+              <folding>
+                <element signature="e#300#5414#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexMaxHeapMain.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IndexMaxHeapMain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IndexMaxHeapMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="22" column="75" lean-forward="true" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+            <state relative-caret-position="489">
+              <caret line="29" lean-forward="true" selection-start-line="2" selection-end-line="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MaxHeap.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BasicDS/MaxHeap.py">
+      <file leaf-file-name="IndexMinHeap.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BasicDS/IndexMinHeap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="100" lean-forward="true" selection-start-line="7" selection-end-line="100" />
+            <state relative-caret-position="270">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexMinHeapMain.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IndexMinHeapMain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinHeap.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BasicDS/MinHeap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -135,6 +92,11 @@
       <find>__avl</find>
       <find>avlMap</find>
       <find>indexes</find>
+      <find>findMax</find>
+      <find>findMaxIndex</find>
+      <find>IndexMaxHeap</find>
+      <find>最大值</find>
+      <find>max</find>
     </findStrings>
     <replaceStrings>
       <replace>queue</replace>
@@ -158,6 +120,10 @@
       <replace>__hashmap</replace>
       <replace>hashMap</replace>
       <replace>data</replace>
+      <replace>findMin</replace>
+      <replace>findMinIndex</replace>
+      <replace>IndexMinHeap</replace>
+      <replace>min</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -166,8 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MaxHeapMain.py" />
-        <option value="$PROJECT_DIR$/BasicDS/Merger.py" />
         <option value="$PROJECT_DIR$/SegmentTreeMain.py" />
         <option value="$PROJECT_DIR$/TrieMain.py" />
         <option value="$PROJECT_DIR$/BasicDS/UFNumpy.py" />
@@ -217,6 +181,8 @@
         <option value="$PROJECT_DIR$/BasicDS/PriorityQueue.py" />
         <option value="$PROJECT_DIR$/BasicDS/IndexMaxHeap.py" />
         <option value="$PROJECT_DIR$/IndexMaxHeapMain.py" />
+        <option value="$PROJECT_DIR$/BasicDS/IndexMinHeap.py" />
+        <option value="$PROJECT_DIR$/IndexMinHeapMain.py" />
       </list>
     </option>
   </component>
@@ -279,25 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.IndexMaxHeapMain">
-    <configuration name="AVLTreeMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AVLTreeMain.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.IndexMinHeapMain">
     <configuration name="AVLTreeMapMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -370,20 +318,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="IndexMinHeapMain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IndexMinHeapMain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.AVLTreeMapMain" />
-      <item itemvalue="Python.AVLTreeMain" />
       <item itemvalue="Python.HashMapMain" />
       <item itemvalue="Python.ArrayStackMain" />
       <item itemvalue="Python.IndexMaxHeapMain" />
+      <item itemvalue="Python.IndexMinHeapMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.IndexMinHeapMain" />
         <item itemvalue="Python.IndexMaxHeapMain" />
         <item itemvalue="Python.ArrayStackMain" />
         <item itemvalue="Python.HashMapMain" />
         <item itemvalue="Python.AVLTreeMapMain" />
-        <item itemvalue="Python.AVLTreeMain" />
       </list>
     </recent_temporary>
   </component>
@@ -429,7 +395,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.171875" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3372093" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33509514" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -498,14 +464,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ArrayQueueMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new.py" />
     <entry file="file://$PROJECT_DIR$/BSTMain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -726,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BasicDS/MinHeap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="87" column="17" lean-forward="true" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BasicDS/RBTree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
@@ -862,15 +813,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BasicDS/IndexMaxHeap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-404">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        <state relative-caret-position="270">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="152" />
+          <folding>
+            <element signature="e#300#5414#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/MinHeap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BasicDS/IndexMinHeap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IndexMaxHeapMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="75" lean-forward="true" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+        <state relative-caret-position="489">
+          <caret line="29" lean-forward="true" selection-start-line="2" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IndexMinHeapMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
         </state>
       </provider>
     </entry>
