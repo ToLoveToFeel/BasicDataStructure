@@ -4,12 +4,12 @@ from BasicDS.IndexMinHeap import IndexMinHeap
 
 if __name__ == "__main__":
     arr = [15, 17, 19, 13, 22, 16, 28, 30, 41, 62]
-    # 创建最大索引堆
+    # 创建最小索引堆
     indexMinHeap = IndexMinHeap(capacity=len(arr))
-    # 最大索引堆中添加数据
+    # 最小索引堆中添加数据
     for i in range(len(arr)):
         indexMinHeap.add(i, arr[i])
-    # 获取并删除最大索引堆中最大值
+    # 获取并删除最小索引堆中最小值
     print("Min value : ", indexMinHeap.extractMin())
     # 仅仅获取最小值
     print("Min value after delete min : ", indexMinHeap.findMin())

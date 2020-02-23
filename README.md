@@ -31,6 +31,7 @@ Next, you can use the package.
 * AVLTree，AVLTreeSet，AVLTreeMap
 * RBTree
 * HashTable，HashSet，HashMap
+* IndexMaxHeap，IndexMinHeap
 
 ![img](https://github.com/i-love-linux/BasicDataStructure/blob/master/BasicDS.png)
 
@@ -499,3 +500,95 @@ map contains "my" after delete "my" :  False
 map is empty :  False
 
 "dear" appears :  3  times.
+
+* Example 13:（索引堆IndexHeap）
+
+```python
+from BasicDS.IndexMaxHeap import IndexMaxHeap
+
+if __name__ == "__main__":
+    arr = [15, 17, 19, 13, 22, 16, 28, 30, 41, 62]
+    # 创建最大索引堆
+    indexMaxHeap = IndexMaxHeap(capacity=len(arr))
+    # 最大索引堆中添加数据
+    for i in range(len(arr)):
+        indexMaxHeap.add(i, arr[i])
+    # 获取并删除最大索引堆中最大值
+    print("Max value : ", indexMaxHeap.extractMax())
+    # 仅仅获取最大值
+    print("Max value after delete max : ", indexMaxHeap.findMax())
+    # 将最大值替换为-1
+    indexMaxHeap.replace(-1)
+    # 重新查看最大值
+    print("Max value after replace max with -1 : ", indexMaxHeap.findMax())
+    # 获取最大值的索引
+    print("The index of max value : ", indexMaxHeap.findMaxIndex())
+    # 判断索引为9的位置在最大索引堆中是否存在
+    print("IndexMaxHeap has value in index 9 : ", indexMaxHeap.contains(9))
+    # # 获取arr[9]对应的数据，应为已经删除所以会出错
+    # print(indexMaxHeap.getItem(9))
+    print("The value where index is 8 : ", indexMaxHeap.getItem(8))
+    # 获取索引堆的大小
+    print("The size of IndexMaxHeap : ", indexMaxHeap.getSize())
+```
+
+`result:`
+
+Max value :  62
+
+Max value after delete max :  41
+
+Max value after replace max with -1 :  30
+
+The index of max value :  7
+
+IndexMaxHeap has value in index 9 :  False
+
+The value where index is 8 :  -1
+
+The size of IndexMaxHeap :  9
+
+```python
+from BasicDS.IndexMinHeap import IndexMinHeap
+
+if __name__ == "__main__":
+    arr = [15, 17, 19, 13, 22, 16, 28, 30, 41, 62]
+    # 创建最小索引堆
+    indexMinHeap = IndexMinHeap(capacity=len(arr))
+    # 最小索引堆中添加数据
+    for i in range(len(arr)):
+        indexMinHeap.add(i, arr[i])
+    # 获取并删除最小索引堆中最小值
+    print("Min value : ", indexMinHeap.extractMin())
+    # 仅仅获取最小值
+    print("Min value after delete min : ", indexMinHeap.findMin())
+    # 将最小值替换为100
+    indexMinHeap.replace(100)
+    # 重新查看最小值
+    print("Min value after replace min with 100 : ", indexMinHeap.findMin())
+    # 获取最小值的索引
+    print("The index of min value : ", indexMinHeap.findMinIndex())
+    # 判断索引为3的位置在最小索引堆中是否存在
+    print("IndexMinHeap has value in index 3 : ", indexMinHeap.contains(3))
+    # # 获取arr[3]对应的数据，应为已经删除所以会出错
+    # print(indexMinHeap.getItem(3))
+    print("The value where index is 0 : ", indexMinHeap.getItem(0))
+    # 获取索引堆的大小
+    print("The size of IndexMinHeap : ", indexMinHeap.getSize())
+```
+
+`result:`
+
+Min value :  13
+
+Min value after delete min :  15
+
+Min value after replace min with 100 :  16
+
+The index of min value :  5
+
+IndexMinHeap has value in index 3 :  False
+
+The value where index is 0 :  100
+
+The size of IndexMinHeap :  9
